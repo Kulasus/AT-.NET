@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "MyStackConsoleApp/1.0.0": {
+        "dependencies": {
+          "MyStack": "1.0.0"
+        },
+        "runtime": {
+          "MyStackConsoleApp.dll": {}
+        }
+      },
+      "MyStack/1.0.0": {
+        "runtime": {
+          "MyStack.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MyStackConsoleApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MyStack/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

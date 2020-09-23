@@ -1,0 +1,9 @@
+D:\Coding\AT-.NET-GIT\cv01-MyStack\MyStack\MyStack\bin\Debug\netcoreapp3.1\MyStack.deps.json
+D:\Coding\AT-.NET-GIT\cv01-MyStack\MyStack\MyStack\bin\Debug\netcoreapp3.1\MyStack.dll
+D:\Coding\AT-.NET-GIT\cv01-MyStack\MyStack\MyStack\bin\Debug\netcoreapp3.1\MyStack.pdb
+D:\Coding\AT-.NET-GIT\cv01-MyStack\MyStack\MyStack\obj\Debug\netcoreapp3.1\MyStack.csprojAssemblyReference.cache
+D:\Coding\AT-.NET-GIT\cv01-MyStack\MyStack\MyStack\obj\Debug\netcoreapp3.1\MyStack.AssemblyInfoInputs.cache
+D:\Coding\AT-.NET-GIT\cv01-MyStack\MyStack\MyStack\obj\Debug\netcoreapp3.1\MyStack.AssemblyInfo.cs
+D:\Coding\AT-.NET-GIT\cv01-MyStack\MyStack\MyStack\obj\Debug\netcoreapp3.1\MyStack.csproj.CoreCompileInputs.cache
+D:\Coding\AT-.NET-GIT\cv01-MyStack\MyStack\MyStack\obj\Debug\netcoreapp3.1\MyStack.dll
+D:\Coding\AT-.NET-GIT\cv01-MyStack\MyStack\MyStack\obj\Debug\netcoreapp3.1\MyStack.pdb

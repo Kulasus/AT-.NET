@@ -1,0 +1,16 @@
+D:\Coding\AT-.NET-GIT\cv01-MyStack\MyStack\MyStackConsoleApp\bin\Debug\netcoreapp3.1\MyStackConsoleApp.exe
+D:\Coding\AT-.NET-GIT\cv01-MyStack\MyStack\MyStackConsoleApp\bin\Debug\netcoreapp3.1\MyStackConsoleApp.deps.json
+D:\Coding\AT-.NET-GIT\cv01-MyStack\MyStack\MyStackConsoleApp\bin\Debug\netcoreapp3.1\MyStackConsoleApp.runtimeconfig.json
+D:\Coding\AT-.NET-GIT\cv01-MyStack\MyStack\MyStackConsoleApp\bin\Debug\netcoreapp3.1\MyStackConsoleApp.runtimeconfig.dev.json
+D:\Coding\AT-.NET-GIT\cv01-MyStack\MyStack\MyStackConsoleApp\bin\Debug\netcoreapp3.1\MyStackConsoleApp.dll
+D:\Coding\AT-.NET-GIT\cv01-MyStack\MyStack\MyStackConsoleApp\bin\Debug\netcoreapp3.1\MyStackConsoleApp.pdb
+D:\Coding\AT-.NET-GIT\cv01-MyStack\MyStack\MyStackConsoleApp\bin\Debug\netcoreapp3.1\MyStack.dll
+D:\Coding\AT-.NET-GIT\cv01-MyStack\MyStack\MyStackConsoleApp\bin\Debug\netcoreapp3.1\MyStack.pdb
+D:\Coding\AT-.NET-GIT\cv01-MyStack\MyStack\MyStackConsoleApp\obj\Debug\netcoreapp3.1\MyStackConsoleApp.csprojAssemblyReference.cache
+D:\Coding\AT-.NET-GIT\cv01-MyStack\MyStack\MyStackConsoleApp\obj\Debug\netcoreapp3.1\MyStackConsoleApp.AssemblyInfoInputs.cache
+D:\Coding\AT-.NET-GIT\cv01-MyStack\MyStack\MyStackConsoleApp\obj\Debug\netcoreapp3.1\MyStackConsoleApp.AssemblyInfo.cs
+D:\Coding\AT-.NET-GIT\cv01-MyStack\MyStack\MyStackConsoleApp\obj\Debug\netcoreapp3.1\MyStackConsoleApp.csproj.CoreCompileInputs.cache
+D:\Coding\AT-.NET-GIT\cv01-MyStack\MyStack\MyStackConsoleApp\obj\Debug\netcoreapp3.1\MyStackConsoleApp.csproj.CopyComplete
+D:\Coding\AT-.NET-GIT\cv01-MyStack\MyStack\MyStackConsoleApp\obj\Debug\netcoreapp3.1\MyStackConsoleApp.dll
+D:\Coding\AT-.NET-GIT\cv01-MyStack\MyStack\MyStackConsoleApp\obj\Debug\netcoreapp3.1\MyStackConsoleApp.pdb
+D:\Coding\AT-.NET-GIT\cv01-MyStack\MyStack\MyStackConsoleApp\obj\Debug\netcoreapp3.1\MyStackConsoleApp.genruntimeconfig.cache
