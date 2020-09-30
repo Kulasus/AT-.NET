@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ReflectionApp/1.0.0": {
+        "runtime": {
+          "ReflectionApp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ReflectionApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
