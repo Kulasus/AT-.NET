@@ -1,0 +1,9 @@
+D:\Coding\AT-.NET-GIT\cv02-Reflection\CalcLib\CalcLib\bin\Debug\netstandard2.0\CalcLib.deps.json
+D:\Coding\AT-.NET-GIT\cv02-Reflection\CalcLib\CalcLib\bin\Debug\netstandard2.0\CalcLib.dll
+D:\Coding\AT-.NET-GIT\cv02-Reflection\CalcLib\CalcLib\bin\Debug\netstandard2.0\CalcLib.pdb
+D:\Coding\AT-.NET-GIT\cv02-Reflection\CalcLib\CalcLib\obj\Debug\netstandard2.0\CalcLib.csprojAssemblyReference.cache
+D:\Coding\AT-.NET-GIT\cv02-Reflection\CalcLib\CalcLib\obj\Debug\netstandard2.0\CalcLib.AssemblyInfoInputs.cache
+D:\Coding\AT-.NET-GIT\cv02-Reflection\CalcLib\CalcLib\obj\Debug\netstandard2.0\CalcLib.AssemblyInfo.cs
+D:\Coding\AT-.NET-GIT\cv02-Reflection\CalcLib\CalcLib\obj\Debug\netstandard2.0\CalcLib.csproj.CoreCompileInputs.cache
+D:\Coding\AT-.NET-GIT\cv02-Reflection\CalcLib\CalcLib\obj\Debug\netstandard2.0\CalcLib.dll
+D:\Coding\AT-.NET-GIT\cv02-Reflection\CalcLib\CalcLib\obj\Debug\netstandard2.0\CalcLib.pdb

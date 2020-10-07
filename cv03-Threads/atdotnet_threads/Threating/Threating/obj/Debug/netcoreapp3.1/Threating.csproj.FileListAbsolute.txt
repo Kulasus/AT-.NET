@@ -1,0 +1,13 @@
+C:\Users\lukas\OneDrive\Plocha\Coding\Nová složka\Threating\Threating\bin\Debug\netcoreapp3.1\Threating.exe
+C:\Users\lukas\OneDrive\Plocha\Coding\Nová složka\Threating\Threating\bin\Debug\netcoreapp3.1\Threating.deps.json
+C:\Users\lukas\OneDrive\Plocha\Coding\Nová složka\Threating\Threating\bin\Debug\netcoreapp3.1\Threating.runtimeconfig.json
+C:\Users\lukas\OneDrive\Plocha\Coding\Nová složka\Threating\Threating\bin\Debug\netcoreapp3.1\Threating.runtimeconfig.dev.json
+C:\Users\lukas\OneDrive\Plocha\Coding\Nová složka\Threating\Threating\bin\Debug\netcoreapp3.1\Threating.dll
+C:\Users\lukas\OneDrive\Plocha\Coding\Nová složka\Threating\Threating\bin\Debug\netcoreapp3.1\Threating.pdb
+C:\Users\lukas\OneDrive\Plocha\Coding\Nová složka\Threating\Threating\obj\Debug\netcoreapp3.1\Threating.csprojAssemblyReference.cache
+C:\Users\lukas\OneDrive\Plocha\Coding\Nová složka\Threating\Threating\obj\Debug\netcoreapp3.1\Threating.AssemblyInfoInputs.cache
+C:\Users\lukas\OneDrive\Plocha\Coding\Nová složka\Threating\Threating\obj\Debug\netcoreapp3.1\Threating.AssemblyInfo.cs
+C:\Users\lukas\OneDrive\Plocha\Coding\Nová složka\Threating\Threating\obj\Debug\netcoreapp3.1\Threating.csproj.CoreCompileInputs.cache
+C:\Users\lukas\OneDrive\Plocha\Coding\Nová složka\Threating\Threating\obj\Debug\netcoreapp3.1\Threating.dll
+C:\Users\lukas\OneDrive\Plocha\Coding\Nová složka\Threating\Threating\obj\Debug\netcoreapp3.1\Threating.pdb
+C:\Users\lukas\OneDrive\Plocha\Coding\Nová složka\Threating\Threating\obj\Debug\netcoreapp3.1\Threating.genruntimeconfig.cache
