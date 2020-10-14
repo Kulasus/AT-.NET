@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "T+sWSdtV4D39FushxMBguTv67kIVlcF7WYmPVQtCL7vEnh2P+uftUQRmY1qgPfKiIUXUMW+da2o3KXOqsHaJLA==",
+  "success": true,
+  "projectFilePath": "D:\\Coding\\AT-.NET-GIT\\cv04-ASP_MVC\\WebApplication\\WebApplication\\WebApplication.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lukas\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

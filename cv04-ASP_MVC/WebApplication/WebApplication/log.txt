@@ -1,0 +1,2 @@
+   at WebApplication.MyFileMiddleware.InvokeAsync(HttpContext context) in D:\Coding\AT-.NET-GIT\cv04-ASP_MVC\WebApplication\WebApplication\MyFileMiddleware.cs:line 27
+   at WebApplication.ErrorHandlerMiddleware.InvokeAsync(HttpContext context, ExceptionHandler handler) in D:\Coding\AT-.NET-GIT\cv04-ASP_MVC\WebApplication\WebApplication\ErrorHandlerMiddleware.cs:line 22
