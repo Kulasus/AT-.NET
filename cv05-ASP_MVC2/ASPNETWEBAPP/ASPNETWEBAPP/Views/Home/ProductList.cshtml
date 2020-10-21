@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Seznam produktů";
+}
+<h2>Seznam produktů</h2>
+
+@foreach(ASPNETWEBAPP.Models.Product p in ViewBag.Products)
+{
+    <div>
+        <h3><a href="@Url.Action("Detail","Home",new { id=p.Id})">@p.Name</a></h3>
+        <strong>@p.Price Kč</strong>
+        <p>@p.Description</p>
+    </div>
+}
