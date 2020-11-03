@@ -1,0 +1,41 @@
+﻿@model ToDoForm
+@{
+    ViewData["Title"] = "Moje TODO apka";
+}
+
+<a href ="@Url.Action("Logout","Home")">Odhlásit se</a>
+
+
+<ul>
+    @foreach(string item in ViewBag.Items)
+    {
+        <li>
+            <div>
+                @item
+                <form action="@Url.Action("Delete")" method="post">
+                    <input type ="hidden" value="@item" name="Text" />
+                    <button type="submit">X</button>
+                </form>
+            </div>
+        </li>
+    }
+</ul>
+
+
+
+@using (Html.BeginForm())
+{
+    <div>
+        <div>
+            @Html.LabelFor(x => x.Text)
+        </div>
+        @Html.TextAreaFor(x => x.Text)
+        @Html.ValidationMessageFor(x => x.Text)
+    </div>
+    <button type="submit">Přidat</button>
+}
+
+
+<hr/>
+
+<a href="@Url.Action("Download")">Stáhnout jako CSV</a>
