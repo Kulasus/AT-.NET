@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "eAJo+r2Ui+sZOG6sV+4jsMnTb/neKnVQt+op0k3OB80g8U4Fg5ipq0DRd+/xckVJY6mSv3Z3ccbeSiBRnRxrYQ==",
+  "success": true,
+  "projectFilePath": "D:\\Coding\\AT-.NET-GIT\\cv07-FileSystemWatcher\\FileSystemWatcherTest\\FileSystemWatcherTest\\FileSystemWatcherTest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lukas\\.nuget\\packages\\mailkit\\2.9.0\\mailkit.2.9.0.nupkg.sha512",
+    "C:\\Users\\lukas\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\lukas\\.nuget\\packages\\mimekit\\2.9.2\\mimekit.2.9.2.nupkg.sha512",
+    "C:\\Users\\lukas\\.nuget\\packages\\portable.bouncycastle\\1.8.5\\portable.bouncycastle.1.8.5.nupkg.sha512",
+    "C:\\Users\\lukas\\.nuget\\packages\\system.reflection.typeextensions\\4.4.0\\system.reflection.typeextensions.4.4.0.nupkg.sha512",
+    "C:\\Users\\lukas\\.nuget\\packages\\system.security.cryptography.cng\\4.7.0\\system.security.cryptography.cng.4.7.0.nupkg.sha512",
+    "C:\\Users\\lukas\\.nuget\\packages\\system.security.cryptography.pkcs\\4.7.0\\system.security.cryptography.pkcs.4.7.0.nupkg.sha512",
+    "C:\\Users\\lukas\\.nuget\\packages\\system.text.encoding.codepages\\4.4.0\\system.text.encoding.codepages.4.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
