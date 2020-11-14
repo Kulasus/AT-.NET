@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using ATNET_WINSERVICE_KON0355_COVIDTRACKER.Downloader;
 using ATNET_WINSERVICE_KON0355_COVIDTRACKER.Helpers;
 using ATNET_WINSERVICE_KON0355_COVIDTRACKER.Data;
+using ATNET_WINSERVICE_KON0355_COVIDTRACKER.EmailService;
 
 namespace ATNET_WINSERVICE_KON0355_COVIDTRACKER
 {
@@ -19,6 +20,7 @@ namespace ATNET_WINSERVICE_KON0355_COVIDTRACKER
         {
             DataDownloader.DownloadFile(Session.settingsPath);
             CovidData data = CovidData.LoadJson();
+            EmailSender.sendMail();
             /*ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[]
             {
