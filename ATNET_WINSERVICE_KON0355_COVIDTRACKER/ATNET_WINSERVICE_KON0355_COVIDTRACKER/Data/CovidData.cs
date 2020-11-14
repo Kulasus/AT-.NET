@@ -28,7 +28,7 @@ namespace ATNET_WINSERVICE_KON0355_COVIDTRACKER.Data
         /// <summary>
         /// All days in file
         /// </summary>
-        private LinkedList<CovidDay> data { get; set; }
+        public LinkedList<CovidDay> data { get; set; }
 
         /// <summary>
         /// Used for deserialization of json to C# object
@@ -44,6 +44,19 @@ namespace ATNET_WINSERVICE_KON0355_COVIDTRACKER.Data
                 JsonSerializer serializer = new JsonSerializer();
                 return (CovidData)serializer.Deserialize(file, typeof(CovidData));
             }
+        }
+
+        /// <summary>
+        /// Returns int array with new cases chronologically for particular number of days back
+        /// </summary>
+        public int[] getNewCasesForDays(int daysBack)
+        {
+            int[] resultArray = new int[daysBack];
+            for(int i = 0; i < daysBack; i++)
+            {
+                resultArray[i] = (int)data.ElementAt(data.Count - daysBack + i).newCases;
+            }
+            return resultArray;
         }
 
     }
