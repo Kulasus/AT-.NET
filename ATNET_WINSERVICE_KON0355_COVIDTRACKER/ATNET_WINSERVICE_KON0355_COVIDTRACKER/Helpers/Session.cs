@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,6 +12,7 @@ namespace ATNET_WINSERVICE_KON0355_COVIDTRACKER.Helpers
     /// </summary>
     static class Session
     {
-        public static readonly string settingsPath = @"D:\Coding\AT-.NET-GIT\ATNET_WINSERVICE_KON0355_COVIDTRACKER\ATNET_WINSERVICE_KON0355_COVIDTRACKER\Resources\settings.xml";
+        public static readonly string projectPath = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..\\..\\"));
+        public static readonly string settingsPath = projectPath+@"\Resources\settings.xml";
     }
 }

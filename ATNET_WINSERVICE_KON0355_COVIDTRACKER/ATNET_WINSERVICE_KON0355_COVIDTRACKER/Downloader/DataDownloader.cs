@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Net;
 using System.Xml;
 using System.Xml.Linq;
+using ATNET_WINSERVICE_KON0355_COVIDTRACKER.Helpers;
 
 namespace ATNET_WINSERVICE_KON0355_COVIDTRACKER.Downloader
 {
@@ -25,10 +26,9 @@ namespace ATNET_WINSERVICE_KON0355_COVIDTRACKER.Downloader
         {
             XmlDocument xml = new XmlDocument();
             xml.Load(settingsPath);
-            string projectPath = xml.DocumentElement.SelectSingleNode("/info/projectPath").InnerText.ToString();
             string sourceAddress = xml.DocumentElement.SelectSingleNode("/info/downloadSource/address").InnerText.ToString();
             string fileName = xml.DocumentElement.SelectSingleNode("/info/downloadSource/fileName").InnerText.ToString();
-            DownloadFile(sourceAddress, projectPath + @"\Resources\" + fileName + ".json");
+            DownloadFile(sourceAddress, Session.projectPath + @"\Resources\" + fileName + ".json");
         }
     }
 }

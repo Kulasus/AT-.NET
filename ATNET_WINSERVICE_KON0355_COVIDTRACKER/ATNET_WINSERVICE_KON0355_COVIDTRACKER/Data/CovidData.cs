@@ -37,10 +37,9 @@ namespace ATNET_WINSERVICE_KON0355_COVIDTRACKER.Data
         {
             XmlDocument xml = new XmlDocument();
             xml.Load(Session.settingsPath);
-            string projectPath = xml.SelectSingleNode("/info/projectPath").InnerText.ToString();
             string fileName = xml.SelectSingleNode("/info/downloadSource/fileName").InnerText.ToString();
 
-            using (StreamReader file = File.OpenText(projectPath + @"\Resources\" + fileName + ".json"))
+            using (StreamReader file = File.OpenText(Session.projectPath + @"\Resources\" + fileName + ".json"))
             {
                 JsonSerializer serializer = new JsonSerializer();
                 return (CovidData)serializer.Deserialize(file, typeof(CovidData));
