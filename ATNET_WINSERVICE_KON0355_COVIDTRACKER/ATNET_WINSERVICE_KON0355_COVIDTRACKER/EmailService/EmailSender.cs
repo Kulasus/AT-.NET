@@ -31,7 +31,7 @@ namespace ATNET_WINSERVICE_KON0355_COVIDTRACKER.EmailService
                 ));
 
             BodyBuilder bodyBuilder = new BodyBuilder();
-            bodyBuilder.HtmlBody = "<h1>Mamka je noob</h1>";
+            bodyBuilder.HtmlBody = "<h1>Test message</h1>";
             message.Body = bodyBuilder.ToMessageBody();
 
             using SmtpClient client = new SmtpClient();
