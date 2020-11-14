@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+  <downloadSource>
+    <address>https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/nakaza.json</address>
+    <fileName>diseaseData</fileName>
+  </downloadSource> 
+</info>
+
