@@ -1,0 +1,29 @@
+﻿Instalace sestavení D:\Coding\AT-.NET-GIT\ATNET_WINSERVICE_KON0355_COVIDTRACKER\ATNET_WINSERVICE_KON0355_COVIDTRACKER\bin\Debug\ATNET_WINSERVICE_KON0355_COVIDTRACKER.exe
+Zasažené parametry:
+   logtoconsole = 
+   assemblypath = D:\Coding\AT-.NET-GIT\ATNET_WINSERVICE_KON0355_COVIDTRACKER\ATNET_WINSERVICE_KON0355_COVIDTRACKER\bin\Debug\ATNET_WINSERVICE_KON0355_COVIDTRACKER.exe
+   logfile = D:\Coding\AT-.NET-GIT\ATNET_WINSERVICE_KON0355_COVIDTRACKER\ATNET_WINSERVICE_KON0355_COVIDTRACKER\bin\Debug\ATNET_WINSERVICE_KON0355_COVIDTRACKER.InstallLog
+Instalace služby CovidTrackerService...
+Vytváření zdroje EventLog CovidTrackerService v protokolu Application...
+Odvolání sestavení D:\Coding\AT-.NET-GIT\ATNET_WINSERVICE_KON0355_COVIDTRACKER\ATNET_WINSERVICE_KON0355_COVIDTRACKER\bin\Debug\ATNET_WINSERVICE_KON0355_COVIDTRACKER.exe
+Zasažené parametry:
+   logtoconsole = 
+   assemblypath = D:\Coding\AT-.NET-GIT\ATNET_WINSERVICE_KON0355_COVIDTRACKER\ATNET_WINSERVICE_KON0355_COVIDTRACKER\bin\Debug\ATNET_WINSERVICE_KON0355_COVIDTRACKER.exe
+   logfile = D:\Coding\AT-.NET-GIT\ATNET_WINSERVICE_KON0355_COVIDTRACKER\ATNET_WINSERVICE_KON0355_COVIDTRACKER\bin\Debug\ATNET_WINSERVICE_KON0355_COVIDTRACKER.InstallLog
+Obnova protokolu událostí na předchozí stav zdroje CovidTrackerService
+V odvolací fázi instalační služby System.Diagnostics.EventLogInstaller došlo k výjimce.
+System.Security.SecurityException: Zdroj nebyl nalezen, ale některé nebo všechny protokoly událostí nelze prohledat. Nepřístupné protokoly: Security.
+Při odvolací fázi instalace došlo k vyvolání výjimky. Výjimka bude ignorována a odvolání bude pokračovat. Po dokončení odvolací operace se však počítač nemusí zcela vrátit do původního stavu.
+Instalace sestavení D:\Coding\AT-.NET-GIT\ATNET_WINSERVICE_KON0355_COVIDTRACKER\ATNET_WINSERVICE_KON0355_COVIDTRACKER\bin\Debug\ATNET_WINSERVICE_KON0355_COVIDTRACKER.exe
+Zasažené parametry:
+   logtoconsole = 
+   assemblypath = D:\Coding\AT-.NET-GIT\ATNET_WINSERVICE_KON0355_COVIDTRACKER\ATNET_WINSERVICE_KON0355_COVIDTRACKER\bin\Debug\ATNET_WINSERVICE_KON0355_COVIDTRACKER.exe
+   logfile = D:\Coding\AT-.NET-GIT\ATNET_WINSERVICE_KON0355_COVIDTRACKER\ATNET_WINSERVICE_KON0355_COVIDTRACKER\bin\Debug\ATNET_WINSERVICE_KON0355_COVIDTRACKER.InstallLog
+Instalace služby CovidTrackerService...
+Služba CovidTrackerService byla úspěšně nainstalována.
+Vytváření zdroje EventLog CovidTrackerService v protokolu Application...
+Potvrzování sestavení D:\Coding\AT-.NET-GIT\ATNET_WINSERVICE_KON0355_COVIDTRACKER\ATNET_WINSERVICE_KON0355_COVIDTRACKER\bin\Debug\ATNET_WINSERVICE_KON0355_COVIDTRACKER.exe
+Zasažené parametry:
+   logtoconsole = 
+   assemblypath = D:\Coding\AT-.NET-GIT\ATNET_WINSERVICE_KON0355_COVIDTRACKER\ATNET_WINSERVICE_KON0355_COVIDTRACKER\bin\Debug\ATNET_WINSERVICE_KON0355_COVIDTRACKER.exe
+   logfile = D:\Coding\AT-.NET-GIT\ATNET_WINSERVICE_KON0355_COVIDTRACKER\ATNET_WINSERVICE_KON0355_COVIDTRACKER\bin\Debug\ATNET_WINSERVICE_KON0355_COVIDTRACKER.InstallLog
