@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Net;
+﻿using System.Net;
 using System.Xml;
-using System.Xml.Linq;
 using ATNET_WINSERVICE_KON0355_COVIDTRACKER.Helpers;
 
 namespace ATNET_WINSERVICE_KON0355_COVIDTRACKER.Downloader

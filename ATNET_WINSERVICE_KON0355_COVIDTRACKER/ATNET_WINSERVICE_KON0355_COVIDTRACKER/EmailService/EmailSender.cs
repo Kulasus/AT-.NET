@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using System.Xml;
 using ATNET_WINSERVICE_KON0355_COVIDTRACKER.Helpers;
 using MailKit.Net.Smtp;
@@ -12,6 +9,9 @@ namespace ATNET_WINSERVICE_KON0355_COVIDTRACKER.EmailService
 {
     static class EmailSender
     {
+        /// <summary>
+        /// Class for sending emails
+        /// </summary>
         public static void sendMail()
         {
             XmlDocument xml = new XmlDocument();
@@ -30,9 +30,30 @@ namespace ATNET_WINSERVICE_KON0355_COVIDTRACKER.EmailService
                 xml.SelectSingleNode("/info/email/receiver/address").InnerText.ToString()
                 ));
 
-            BodyBuilder bodyBuilder = new BodyBuilder();
-            bodyBuilder.HtmlBody = "<h1>Mamka je noob</h1>";
-            message.Body = bodyBuilder.ToMessageBody();
+            using FileStream fs = File.OpenRead(Session.projectPath + @"\Resources\Graph.jpg");
+            var attachment = new MimePart("image", "gif")
+            {
+                Content = new MimeContent(fs),
+                ContentDisposition = new ContentDisposition(ContentDisposition.Attachment),
+                ContentTransferEncoding = ContentEncoding.Base64,
+                FileName = Path.GetFileName(Session.projectPath + @"\Resources\Graph.jpg")
+            };
+
+            var body = new TextPart("plain")
+            {
+                Text = @"Hey there,
+
+                You can find new covid-19 cases in Czech Republic for last 14 days graph in the attachment.
+
+                Yours faithfull,
+                Windows Service"
+            };
+            
+            var multipart = new Multipart("mixed");
+            multipart.Add(body);
+            multipart.Add(attachment);
+
+            message.Body = multipart;
 
             using SmtpClient client = new SmtpClient();
             client.Connect(
@@ -45,6 +66,8 @@ namespace ATNET_WINSERVICE_KON0355_COVIDTRACKER.EmailService
                 );
             client.Send(message);
             client.Disconnect(true);
+            client.Dispose();
+            fs.Close();
         }
     }
 }
