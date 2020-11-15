@@ -1,30 +1,40 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
-using System.Linq;
-using System.ServiceProcess;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ServiceProcess;
 using ATNET_WINSERVICE_KON0355_COVIDTRACKER.Downloader;
 using ATNET_WINSERVICE_KON0355_COVIDTRACKER.Helpers;
 using ATNET_WINSERVICE_KON0355_COVIDTRACKER.Data;
 using ATNET_WINSERVICE_KON0355_COVIDTRACKER.EmailService;
 using ATNET_WINSERVICE_KON0355_COVIDTRACKER.Graph;
-using System.Timers;
+
+using System.Threading;
+using System;
 
 namespace ATNET_WINSERVICE_KON0355_COVIDTRACKER
 {
     public partial class CovidTrackerService : ServiceBase
     {
-        Timer timer = new Timer();
+        Timer timer;
 
         public CovidTrackerService()
         {
             InitializeComponent();
-            timer.Interval = 360000; //Ten minutes
-            timer.Elapsed += new ElapsedEventHandler(this.OnTimer);
+            timer = new Timer(OnTimer,null,Timeout.Infinite,Timeout.Infinite);
+        }
+
+        protected void OnTimer(object state)
+        {
+            timer.Change(Timeout.Infinite, Timeout.Infinite);
+            try
+            {
+                DataDownloader.DownloadFile(Session.settingsPath);
+                CovidData data = CovidData.LoadJson();
+                GraphGenerator.GenerateGraph(1200, 1200, data.getNewCasesForDays(14));
+                EmailSender.sendMail();
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine("Error in timer. " + e);
+            }
+            timer.Change(60000, Timeout.Infinite);
         }
 
         protected override void OnStart(string[] args)
@@ -33,20 +43,13 @@ namespace ATNET_WINSERVICE_KON0355_COVIDTRACKER
             CovidData data = CovidData.LoadJson();
             GraphGenerator.GenerateGraph(1200, 1200, data.getNewCasesForDays(14));
             EmailSender.sendMail();
-            timer.Start();
+            timer.Change(60000, Timeout.Infinite);
         }
 
-        public void OnTimer(object sender, ElapsedEventArgs args)
-        {
-            DataDownloader.DownloadFile(Session.settingsPath);
-            CovidData data = CovidData.LoadJson();
-            GraphGenerator.GenerateGraph(1200, 1200, data.getNewCasesForDays(14));
-            EmailSender.sendMail();
-        }
 
         protected override void OnStop()
         {
-            timer.Stop();
+            timer.Change(Timeout.Infinite, Timeout.Infinite);
         }
 
         protected override void OnContinue()
@@ -55,7 +58,7 @@ namespace ATNET_WINSERVICE_KON0355_COVIDTRACKER
             CovidData data = CovidData.LoadJson();
             GraphGenerator.GenerateGraph(1200, 1200, data.getNewCasesForDays(14));
             EmailSender.sendMail();
-            timer.Start();
+            timer.Change(60000, Timeout.Infinite);
         }
     }
 }

@@ -1,10 +1,8 @@
-﻿using ATNET_WINSERVICE_KON0355_COVIDTRACKER.Data;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using ATNET_WINSERVICE_KON0355_COVIDTRACKER.Helpers;
 
 namespace ATNET_WINSERVICE_KON0355_COVIDTRACKER.Graph
@@ -24,8 +22,8 @@ namespace ATNET_WINSERVICE_KON0355_COVIDTRACKER.Graph
             int circleWidth = 10;
             int circleHeight = 10;
 
-            Image img = new Bitmap(width, height);
-            Graphics drawing = Graphics.FromImage(img);
+            using Image img = new Bitmap(width, height);
+            using Graphics drawing = Graphics.FromImage(img);
 
             Point axisStartPoint = new Point(axisStartPointX, axisStartPointY);
             Point yAxisEndPoint = new Point(axisStartPointX, axisTopPointY);
@@ -79,11 +77,37 @@ namespace ATNET_WINSERVICE_KON0355_COVIDTRACKER.Graph
                 drawing.DrawString(today.Day.ToString() + "." + today.Month.ToString() + ".", new Font("Arial", 16), blackBrush, new Point(graphPoints[i].X-20, axisStartPointY+ 10));
                 today = today.AddDays(-1);
             }
-
-
+            /*
+            string outputFileName = Session.projectPath + @"\Resources\Graph.jpg";
+            using (MemoryStream memory = new MemoryStream())
+            {
+                using (FileStream fs = new FileStream(outputFileName, FileMode.Create, FileAccess.ReadWrite))
+                {
+                    img.Save(memory, ImageFormat.Jpeg);
+                    byte[] bytes = memory.ToArray();
+                    fs.Write(bytes, 0, bytes.Length);
+                }
+            }*/
             //Saving
-            drawing.Save();
-            img.Save(Session.projectPath+@"\Resources\Graph.jpg");
+            try {
+                img.Save(Session.projectPath + @"\Resources\Graph.jpg");
+            }
+            catch(Exception e)
+            {
+                Bitmap bitmap = new Bitmap(img.Width, img.Height, img.PixelFormat);
+                Graphics g = Graphics.FromImage(bitmap);
+                g.DrawImage(img, new Point(0, 0));
+                g.Dispose();
+                img.Dispose();
+                bitmap.Save(Session.projectPath + @"\Resources\Graph.jpg");
+            }
+
+
+            //drawing.Save();
+            //img.Save(Session.projectPath+@"\Resources\Graph.jpg");
+            //img.Dispose();
+            //drawing.Dispose();
+            //img.Dispose();*/
         }
     }
 }

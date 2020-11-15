@@ -40,8 +40,8 @@
             // serviceInstaller1
             // 
             this.serviceInstaller1.Description = "Servise which sands Covid-19 data to my mail";
-            this.serviceInstaller1.DisplayName = "CovidTrackerService";
-            this.serviceInstaller1.ServiceName = "CovidTrackerServiceV2";
+            this.serviceInstaller1.DisplayName = "CovidTrackerServiceV2";
+            this.serviceInstaller1.ServiceName = "CovidTrackerService";
             this.serviceInstaller1.StartType = System.ServiceProcess.ServiceStartMode.Automatic;
             this.serviceInstaller1.AfterInstall += new System.Configuration.Install.InstallEventHandler(this.serviceInstaller1_AfterInstall);
             // 
