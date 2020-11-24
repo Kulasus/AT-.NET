@@ -1,0 +1,88 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Validators/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Validators.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Validators.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Validators/1.0.0": {
+      "type": "project",
+      "path": "../Validators/Validators.csproj",
+      "msbuildProject": "../Validators/Validators.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Validators >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\lukas\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Coding\\AT-.NET-GIT\\cv08-Diagnostics\\Diagnostics\\IcValidator\\IcValidator.csproj",
+      "projectName": "IcValidator",
+      "projectPath": "D:\\Coding\\AT-.NET-GIT\\cv08-Diagnostics\\Diagnostics\\IcValidator\\IcValidator.csproj",
+      "packagesPath": "C:\\Users\\lukas\\.nuget\\packages\\",
+      "outputPath": "D:\\Coding\\AT-.NET-GIT\\cv08-Diagnostics\\Diagnostics\\IcValidator\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\lukas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "D:\\Coding\\AT-.NET-GIT\\cv08-Diagnostics\\Diagnostics\\Validators\\Validators.csproj": {
+              "projectPath": "D:\\Coding\\AT-.NET-GIT\\cv08-Diagnostics\\Diagnostics\\Validators\\Validators.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
