@@ -1,0 +1,3 @@
+Zadán text delší než 5
+Aplikace byla spuštěna.
+Aplikace byla spuštěna 2.

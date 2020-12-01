@@ -1,0 +1,13 @@
+D:\Coding\AT-.NET-GIT\cv08-Diagnostics\Diagnostics\Diagnostics\bin\Debug\netcoreapp3.1\Diagnostics.exe
+D:\Coding\AT-.NET-GIT\cv08-Diagnostics\Diagnostics\Diagnostics\bin\Debug\netcoreapp3.1\Diagnostics.deps.json
+D:\Coding\AT-.NET-GIT\cv08-Diagnostics\Diagnostics\Diagnostics\bin\Debug\netcoreapp3.1\Diagnostics.runtimeconfig.json
+D:\Coding\AT-.NET-GIT\cv08-Diagnostics\Diagnostics\Diagnostics\bin\Debug\netcoreapp3.1\Diagnostics.runtimeconfig.dev.json
+D:\Coding\AT-.NET-GIT\cv08-Diagnostics\Diagnostics\Diagnostics\bin\Debug\netcoreapp3.1\Diagnostics.dll
+D:\Coding\AT-.NET-GIT\cv08-Diagnostics\Diagnostics\Diagnostics\bin\Debug\netcoreapp3.1\Diagnostics.pdb
+D:\Coding\AT-.NET-GIT\cv08-Diagnostics\Diagnostics\Diagnostics\obj\Debug\netcoreapp3.1\Diagnostics.csprojAssemblyReference.cache
+D:\Coding\AT-.NET-GIT\cv08-Diagnostics\Diagnostics\Diagnostics\obj\Debug\netcoreapp3.1\Diagnostics.AssemblyInfoInputs.cache
+D:\Coding\AT-.NET-GIT\cv08-Diagnostics\Diagnostics\Diagnostics\obj\Debug\netcoreapp3.1\Diagnostics.AssemblyInfo.cs
+D:\Coding\AT-.NET-GIT\cv08-Diagnostics\Diagnostics\Diagnostics\obj\Debug\netcoreapp3.1\Diagnostics.csproj.CoreCompileInputs.cache
+D:\Coding\AT-.NET-GIT\cv08-Diagnostics\Diagnostics\Diagnostics\obj\Debug\netcoreapp3.1\Diagnostics.dll
+D:\Coding\AT-.NET-GIT\cv08-Diagnostics\Diagnostics\Diagnostics\obj\Debug\netcoreapp3.1\Diagnostics.pdb
+D:\Coding\AT-.NET-GIT\cv08-Diagnostics\Diagnostics\Diagnostics\obj\Debug\netcoreapp3.1\Diagnostics.genruntimeconfig.cache

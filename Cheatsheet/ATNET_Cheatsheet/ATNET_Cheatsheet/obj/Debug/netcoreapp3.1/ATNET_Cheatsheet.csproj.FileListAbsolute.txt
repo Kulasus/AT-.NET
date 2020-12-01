@@ -1,0 +1,13 @@
+D:\Coding\AT-.NET-GIT\Cheatsheet\ATNET_Cheatsheet\ATNET_Cheatsheet\bin\Debug\netcoreapp3.1\ATNET_Cheatsheet.exe
+D:\Coding\AT-.NET-GIT\Cheatsheet\ATNET_Cheatsheet\ATNET_Cheatsheet\bin\Debug\netcoreapp3.1\ATNET_Cheatsheet.deps.json
+D:\Coding\AT-.NET-GIT\Cheatsheet\ATNET_Cheatsheet\ATNET_Cheatsheet\bin\Debug\netcoreapp3.1\ATNET_Cheatsheet.runtimeconfig.json
+D:\Coding\AT-.NET-GIT\Cheatsheet\ATNET_Cheatsheet\ATNET_Cheatsheet\bin\Debug\netcoreapp3.1\ATNET_Cheatsheet.runtimeconfig.dev.json
+D:\Coding\AT-.NET-GIT\Cheatsheet\ATNET_Cheatsheet\ATNET_Cheatsheet\bin\Debug\netcoreapp3.1\ATNET_Cheatsheet.dll
+D:\Coding\AT-.NET-GIT\Cheatsheet\ATNET_Cheatsheet\ATNET_Cheatsheet\bin\Debug\netcoreapp3.1\ATNET_Cheatsheet.pdb
+D:\Coding\AT-.NET-GIT\Cheatsheet\ATNET_Cheatsheet\ATNET_Cheatsheet\obj\Debug\netcoreapp3.1\ATNET_Cheatsheet.csprojAssemblyReference.cache
+D:\Coding\AT-.NET-GIT\Cheatsheet\ATNET_Cheatsheet\ATNET_Cheatsheet\obj\Debug\netcoreapp3.1\ATNET_Cheatsheet.AssemblyInfoInputs.cache
+D:\Coding\AT-.NET-GIT\Cheatsheet\ATNET_Cheatsheet\ATNET_Cheatsheet\obj\Debug\netcoreapp3.1\ATNET_Cheatsheet.AssemblyInfo.cs
+D:\Coding\AT-.NET-GIT\Cheatsheet\ATNET_Cheatsheet\ATNET_Cheatsheet\obj\Debug\netcoreapp3.1\ATNET_Cheatsheet.csproj.CoreCompileInputs.cache
+D:\Coding\AT-.NET-GIT\Cheatsheet\ATNET_Cheatsheet\ATNET_Cheatsheet\obj\Debug\netcoreapp3.1\ATNET_Cheatsheet.dll
+D:\Coding\AT-.NET-GIT\Cheatsheet\ATNET_Cheatsheet\ATNET_Cheatsheet\obj\Debug\netcoreapp3.1\ATNET_Cheatsheet.pdb
+D:\Coding\AT-.NET-GIT\Cheatsheet\ATNET_Cheatsheet\ATNET_Cheatsheet\obj\Debug\netcoreapp3.1\ATNET_Cheatsheet.genruntimeconfig.cache
