@@ -1,0 +1,83 @@
+﻿@model LoginForm
+@using ATNET_WEBAPP_KON0355.Models
+@{
+    ViewData["Title"] = "Login";
+}
+<!DOCTYPE html>
+<style>
+    .login-container {
+        align-content: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 32%;
+        margin-right: 32%;
+        background: #ffffff
+    }
+
+    .login-form {
+        padding: 10%;
+        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+    }
+        .login-form h3 {
+            text-align: center;
+            color: #333;
+        }
+
+    .login-container form {
+        padding: 10%;
+    }
+
+    .btnSubmit {
+        width: 50%;
+        border-radius: 1rem;
+        padding: 1.5%;
+        border: none;
+        cursor: pointer;
+    }
+
+    .login-form .btnSubmit {
+        font-weight: 600;
+        color: #000;
+        background-color: #ff6a00;
+    }
+
+    .login-form .ForgetPwd {
+        color: #0062cc;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    body{
+        background-image: url('../img/loginBackground2.jpg')
+    }
+</style>
+<html>
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="login-container">
+        <div>
+            <div class="login-form">
+                <h3>Login</h3>
+                @using (Html.BeginForm())
+                {
+                    <div class="form-group">
+                        @Html.ValidationMessageFor(x => x.Username)
+                        @Html.TextBoxFor(x => x.Username, null, new { @class = "form-control", placeholder = "Your Email *" })
+                    </div>
+                    <div class="form-group">
+                        @Html.ValidationMessageFor(x => x.Password)
+                        @Html.TextBoxFor(x => x.Password, null, new { @class = "form-control", placeholder = "Your Password *" })
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btnSubmit" value="Login" />
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</body>
+</html>
