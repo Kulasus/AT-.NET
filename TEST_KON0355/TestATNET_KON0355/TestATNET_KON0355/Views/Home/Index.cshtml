@@ -1,0 +1,39 @@
+﻿@model FormModel
+@{
+    ViewData["Title"] = "Testovaci web";
+}
+
+@using (Html.BeginForm())
+{
+    <div>
+        @Html.LabelFor(x => x.jmeno)
+        @Html.TextBoxFor(x => x.jmeno)
+        @Html.ValidationMessageFor(x => x.jmeno)
+    </div>
+
+    <div>
+        @Html.LabelFor(x => x.prijmeni)
+        @Html.TextBoxFor(x => x.prijmeni)
+        @Html.ValidationMessageFor(x => x.prijmeni)
+    </div>
+
+    <div>
+        @Html.LabelFor(x => x.vek)
+        @Html.TextBoxFor(x => x.vek)
+        @Html.ValidationMessageFor(x => x.vek)
+    </div>
+
+    <div>
+        @Html.LabelFor(x => x.email)
+        @Html.TextBoxFor(x => x.email)
+        @Html.ValidationMessageFor(x => x.email)
+    </div>
+
+    <div>
+        @Html.LabelFor(x => x.text)
+        @Html.TextAreaFor(x => x.text)
+        @Html.ValidationMessageFor(x => x.text)
+    </div>
+
+    <button type="submit">Odeslat</button>
+}

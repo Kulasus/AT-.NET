@@ -1,0 +1,23 @@
+﻿@{ 
+    List<FormModel> data = ViewBag.Data as List<FormModel>;
+    ViewData["Title"] = "Data";
+}
+<table>
+    <tr>
+        <th>Jméno</th>
+        <th>Příjmení</th>
+        <th>Email</th>
+        <th>Věk</th>
+        <th>Text</th>
+    </tr>
+    @foreach (FormModel model in data)
+    {
+        <tr>
+            <td>@(model.jmeno)</td>
+            <td>@(model.prijmeni)</td>
+            <td>@(model.email)</td>
+            <td>@(model.vek)</td>
+            <td>@(model.text)</td>
+        </tr>
+    }
+</table>
