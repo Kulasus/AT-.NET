@@ -30,6 +30,7 @@
     }
 
     .table {
+        align-content: center;
         text-align: center;
         padding: 5% 25% 0% 25%;
     }
@@ -55,6 +56,28 @@
     </nav>
 
     <div class="table">
+        <table>
+            <caption>Shows data</caption>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Series</th>
+                <th>Episodes</th>
+                <th>Favourite character</th>
+                <th>Delete</th>
+            </tr>
+            @foreach(Show s in Show.showsList)
+            {
+                <tr>
+                    <td>@s.ID</td>
+                    <td>@s.Name</td>
+                    <td>@s.Series</td>
+                    <td>@s.Episodes</td>
+                    <td>@s.Character</td>
+                    <td><a href="@Url.Action("DeleteShow","Home", new { id = s.ID})">Delete</a><td>
+                </tr>
+            }
+        </table>
     </div>
         
 

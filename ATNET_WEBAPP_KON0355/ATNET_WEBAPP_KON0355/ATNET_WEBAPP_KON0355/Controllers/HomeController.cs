@@ -45,6 +45,12 @@ namespace ATNET_WEBAPP_KON0355.Controllers
             return View();
         }
 
+        public IActionResult DeleteShow(int id)
+        {
+            Debug.WriteLine(id);
+            return RedirectToAction("Data","Home");
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

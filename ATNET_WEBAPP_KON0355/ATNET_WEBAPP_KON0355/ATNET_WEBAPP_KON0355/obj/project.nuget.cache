@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "e9Vae1Ofsgii+0NNqy3+XI0DasHt05RRVkdQqsrFpQoJl+iyMm02TtAYwYECEwUGXOpiv0oyQfQByogd9sgQtA==",
+  "dgSpecHash": "LLqePdhRm4GO3xFRkoF7+vPXUxENv+2pKSDa1kTTEshZ/vvBC78xtSrUasTwvdEKmGf6Cv4w9lVtpZDfbSKTLw==",
   "success": true,
   "projectFilePath": "D:\\Coding\\AT-.NET-GIT\\ATNET_WEBAPP_KON0355\\ATNET_WEBAPP_KON0355\\ATNET_WEBAPP_KON0355\\ATNET_WEBAPP_KON0355.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\lukas\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

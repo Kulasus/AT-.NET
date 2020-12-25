@@ -14,6 +14,7 @@ namespace ATNET_WEBAPP_KON0355
     {
         public static void Main(string[] args)
         {
+            Show.loadShowsFromJson();
             CreateHostBuilder(args).Build().Run();
         }
 
