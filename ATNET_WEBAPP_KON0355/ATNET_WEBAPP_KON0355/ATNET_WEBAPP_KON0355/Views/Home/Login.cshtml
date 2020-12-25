@@ -64,9 +64,10 @@
                 <h3>Login</h3>
                 @using (Html.BeginForm())
                 {
+                    @Html.ValidationSummary()
                     <div class="form-group">
                         @Html.ValidationMessageFor(x => x.Username)
-                        @Html.TextBoxFor(x => x.Username, null, new { @class = "form-control", placeholder = "Your Email *" })
+                        @Html.TextBoxFor(x => x.Username, null, new { @class = "form-control", placeholder = "Your Username *" })
                     </div>
                     <div class="form-group">
                         @Html.ValidationMessageFor(x => x.Password)

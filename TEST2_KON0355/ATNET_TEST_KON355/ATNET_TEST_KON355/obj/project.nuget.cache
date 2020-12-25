@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "YWNeCTFmuEDInwEYzWRt+9AC5U4TOCFw1h/z+NR20rRo6D/bsjnIAGr8dxsfMzC5nY6hVCXHGiggPbhw5sEZrw==",
+  "success": true,
+  "projectFilePath": "D:\\Coding\\AT-.NET-GIT\\TEST2_KON0355\\ATNET_TEST_KON355\\ATNET_TEST_KON355\\ATNET_TEST_KON355.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lukas\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

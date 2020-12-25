@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using ATNET_WEBAPP_KON0355.Models;
 
 namespace ATNET_WEBAPP_KON0355
 {
@@ -13,6 +14,7 @@ namespace ATNET_WEBAPP_KON0355
     {
         public static void Main(string[] args)
         {
+            Show.loadShowsFromJson();
             CreateHostBuilder(args).Build().Run();
         }
 
