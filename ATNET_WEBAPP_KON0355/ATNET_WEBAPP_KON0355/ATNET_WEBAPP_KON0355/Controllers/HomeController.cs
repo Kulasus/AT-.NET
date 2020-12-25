@@ -29,12 +29,15 @@ namespace ATNET_WEBAPP_KON0355.Controllers
         [HttpPost]
         public IActionResult Login(LoginForm form)
         {
+            if(form.Username != "admin" && form.Password != "admin")
+            {
+                ModelState.AddModelError("Credentials", "Invalid credentials");
+            }
             if (ModelState.IsValid)
             {
                 return RedirectToAction("Data", "Home");
             }
             return this.Login();
-
         }
 
         public IActionResult Data()
