@@ -1,16 +1,1 @@
-﻿[
-  {
-    "Episodes": 59,
-    "Character": "Ivar the Boneless",
-    "ID": 1,
-    "Name": "Vikings",
-    "Series": 6
-  },
-  {
-    "Episodes": 23,
-    "Character": "Andrés \"Berlin\" de Fonollosa",
-    "ID": 2,
-    "Name": "Money Heist",
-    "Series": 2
-  }
-]
+[{"ID":232151,"Name":"Vikings","Episodes":59,"Series":6,"Character":"Ivar the Boneless"}]

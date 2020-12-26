@@ -1,4 +1,6 @@
-﻿@{
+﻿@model ShowForm
+@using ATNET_WEBAPP_KON0355.Models
+@{
     ViewData["Title"] = "Úvodní stránka";
 }
 <!DOCTYPE html>
@@ -34,6 +36,19 @@
         text-align: center;
         padding: 5% 25% 0% 25%;
     }
+
+    .form {
+        align-content: center;
+        text-align: start;
+        padding: 2% 25% 0% 25%;
+    }
+    .form-button {
+        align-content: center;
+        text-align: start;
+        padding-top: 2%; 
+        padding-bottom: 10%;
+    }
+    
 </style>
 <html lang="en">
 <head>
@@ -57,16 +72,17 @@
 
     <div class="table">
         <table>
-            <caption>Shows data</caption>
+            <caption></caption>
             <tr>
                 <th>Id</th>
                 <th>Name</th>
                 <th>Series</th>
                 <th>Episodes</th>
                 <th>Favourite character</th>
+                <th>Edit</th>
                 <th>Delete</th>
             </tr>
-            @foreach(Show s in Show.showsList)
+            @foreach (Show s in Show.showsList)
             {
                 <tr>
                     <td>@s.ID</td>
@@ -74,12 +90,35 @@
                     <td>@s.Series</td>
                     <td>@s.Episodes</td>
                     <td>@s.Character</td>
-                    <td><a href="@Url.Action("DeleteShow","Home", new { id = s.ID})">Delete</a><td>
+                    <td><a href="@Url.Action("EditShow","Home", new { id = s.ID})">Edit</a>
+                    <td>
+                    <td><a href="@Url.Action("DeleteShow","Home", new { id = s.ID})">Delete</a>
+                    <td>
                 </tr>
             }
         </table>
     </div>
-        
+    <div class="form">
+        <h3>Add new show:</h3>
+    </div>
+    <div class="form">
+        @using (Html.BeginForm())
+        {
+            @Html.LabelFor(s => s.Name)
+            @Html.TextBoxFor(s => s.Name, null, new { @class = "form-control", placeholder = "Show name" })
 
+            @Html.LabelFor(s => s.Episodes)
+            @Html.TextBoxFor(s => s.Episodes, null, new { @class = "form-control", placeholder = 1, type = "number" })
+
+            @Html.LabelFor(s => s.Series)
+            @Html.TextBoxFor(s => s.Series, null, new { @class = "form-control", placeholder = 1, type = "number" })
+
+            @Html.LabelFor(s => s.Character)
+            @Html.TextBoxFor(s => s.Character, null, new { @class = "form-control", placeholder = "Favorite character"})
+            <div class="form-button">
+                <input type="submit" value="Add" />
+            </div>
+        }
+    </div>
 </body>
 </html>

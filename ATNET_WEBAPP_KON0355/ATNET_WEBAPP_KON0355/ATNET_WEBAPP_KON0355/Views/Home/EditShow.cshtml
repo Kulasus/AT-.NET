@@ -1,0 +1,105 @@
+﻿@model ShowForm
+@using ATNET_WEBAPP_KON0355.Models
+@{
+    ViewData["Title"] = "Úvodní stránka";
+    Show editedShow = ViewBag.editedShow as Show;
+}
+<!DOCTYPE html>
+<style>
+    .nav-item::after {
+        content: '';
+        display: block;
+        width: 0px;
+        height: 4px;
+        background: #ff0000;
+        transition: 0.2s;
+        margin-top: -10px;
+    }
+
+    .nav-item:hover::after {
+        width: 100%;
+    }
+
+
+    .nav-link {
+        padding: 15px 5px;
+        transition: 0.2s;
+    }
+
+    .navbar-nav .nav-link {
+        color: #000;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .table {
+        align-content: center;
+        text-align: center;
+        padding: 5% 25% 0% 25%;
+    }
+</style>
+<html lang="en">
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>@ViewData["Title"] - ATNET_WEBAPP_KON0355</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="@Url.Action("Index","Home")" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="@Url.Action("Login","Home")" class="nav-link">Data</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="table">
+        @using (Html.BeginForm())
+        {
+            <table>
+                <caption>If any field remains empty, previous value will be used.</caption>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Series</th>
+                    <th>Episodes</th>
+                    <th>Favourite character</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+                @foreach (Show s in Show.showsList)
+                {
+                    <tr>
+
+                        @if (s.ID == editedShow.ID)
+                        {
+                            <td>@Html.TextBoxFor(s => s.ID, null, new { @class = "form-control", @Value = editedShow.ID, placeholder = editedShow.ID, type = "number" , @readonly="readonly"})</td>
+                            <td>@Html.TextBoxFor(s => s.Name, null, new { @class = "form-control", placeholder = editedShow.Name })</td>
+                            <td>@Html.TextBoxFor(s => s.Series, null, new { @class = "form-control", placeholder = editedShow.Series, type = "number" })</td>
+                            <td>@Html.TextBoxFor(s => s.Episodes, null, new { @class = "form-control", placeholder = editedShow.Episodes, type = "number" })</td>
+                            <td>@Html.TextBoxFor(s => s.Character, null, new { @class = "form-control", placeholder = editedShow.Character })</td>
+                            <td><input type="submit" value="Update" /></td>
+                        }
+                        else
+                        {
+                            <td>@s.ID</td>
+                            <td>@s.Name</td>
+                            <td>@s.Series</td>
+                            <td>@s.Episodes</td>
+                            <td>@s.Character</td>
+                            <td><a href="@Url.Action("EditShow", "Home")">Edit</a></td>
+                        }
+                        <td><a href="@Url.Action("DeleteShow", "Home", new { id = s.ID })">Delete</a>
+                        <td>
+                    </tr>
+                }
+            </table>
+        }
+    </div>
+</body>
+</html>
