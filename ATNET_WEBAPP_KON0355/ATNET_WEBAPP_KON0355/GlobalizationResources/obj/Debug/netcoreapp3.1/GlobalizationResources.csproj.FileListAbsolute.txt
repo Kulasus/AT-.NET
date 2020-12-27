@@ -1,0 +1,14 @@
+D:\Coding\AT-.NET-GIT\ATNET_WEBAPP_KON0355\ATNET_WEBAPP_KON0355\GlobalizationResources\bin\Debug\netcoreapp3.1\GlobalizationResources.deps.json
+D:\Coding\AT-.NET-GIT\ATNET_WEBAPP_KON0355\ATNET_WEBAPP_KON0355\GlobalizationResources\bin\Debug\netcoreapp3.1\GlobalizationResources.dll
+D:\Coding\AT-.NET-GIT\ATNET_WEBAPP_KON0355\ATNET_WEBAPP_KON0355\GlobalizationResources\bin\Debug\netcoreapp3.1\GlobalizationResources.pdb
+D:\Coding\AT-.NET-GIT\ATNET_WEBAPP_KON0355\ATNET_WEBAPP_KON0355\GlobalizationResources\obj\Debug\netcoreapp3.1\GlobalizationResources.csprojAssemblyReference.cache
+D:\Coding\AT-.NET-GIT\ATNET_WEBAPP_KON0355\ATNET_WEBAPP_KON0355\GlobalizationResources\obj\Debug\netcoreapp3.1\GlobalizationResources.csproj.GenerateResource.cache
+D:\Coding\AT-.NET-GIT\ATNET_WEBAPP_KON0355\ATNET_WEBAPP_KON0355\GlobalizationResources\obj\Debug\netcoreapp3.1\GlobalizationResources.AssemblyInfoInputs.cache
+D:\Coding\AT-.NET-GIT\ATNET_WEBAPP_KON0355\ATNET_WEBAPP_KON0355\GlobalizationResources\obj\Debug\netcoreapp3.1\GlobalizationResources.AssemblyInfo.cs
+D:\Coding\AT-.NET-GIT\ATNET_WEBAPP_KON0355\ATNET_WEBAPP_KON0355\GlobalizationResources\obj\Debug\netcoreapp3.1\GlobalizationResources.csproj.CoreCompileInputs.cache
+D:\Coding\AT-.NET-GIT\ATNET_WEBAPP_KON0355\ATNET_WEBAPP_KON0355\GlobalizationResources\obj\Debug\netcoreapp3.1\GlobalizationResources.dll
+D:\Coding\AT-.NET-GIT\ATNET_WEBAPP_KON0355\ATNET_WEBAPP_KON0355\GlobalizationResources\obj\Debug\netcoreapp3.1\GlobalizationResources.pdb
+D:\Coding\AT-.NET-GIT\ATNET_WEBAPP_KON0355\ATNET_WEBAPP_KON0355\GlobalizationResources\obj\Debug\netcoreapp3.1\GlobalizationResources.Resources.resources
+D:\Coding\AT-.NET-GIT\ATNET_WEBAPP_KON0355\ATNET_WEBAPP_KON0355\GlobalizationResources\bin\Debug\netcoreapp3.1\cs-CZ\GlobalizationResources.resources.dll
+D:\Coding\AT-.NET-GIT\ATNET_WEBAPP_KON0355\ATNET_WEBAPP_KON0355\GlobalizationResources\obj\Debug\netcoreapp3.1\GlobalizationResources.Resources.cs-CZ.resources
+D:\Coding\AT-.NET-GIT\ATNET_WEBAPP_KON0355\ATNET_WEBAPP_KON0355\GlobalizationResources\obj\Debug\netcoreapp3.1\cs-CZ\GlobalizationResources.resources.dll

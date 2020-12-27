@@ -62,10 +62,10 @@
 
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a href="@Url.Action("Index","Home")" class="nav-link">Home</a>
+                <a href="@Url.Action("Index","Home")" class="nav-link">@GlobalizationResources.Resources.Home</a>
             </li>
             <li class="nav-item">
-                <a href="@Url.Action("Login","Home")" class="nav-link">Data</a>
+                <a href="@Url.Action("Login","Home")" class="nav-link">@GlobalizationResources.Resources.Data</a>
             </li>
         </ul>
     </nav>
@@ -75,12 +75,12 @@
             <caption></caption>
             <tr>
                 <th>Id</th>
-                <th>Name</th>
-                <th>Series</th>
-                <th>Episodes</th>
-                <th>Favourite character</th>
-                <th>Edit</th>
-                <th>Delete</th>
+                <th>@GlobalizationResources.Resources.Name</th>
+                <th>@GlobalizationResources.Resources.Series</th>
+                <th>@GlobalizationResources.Resources.Episodes</th>
+                <th>@GlobalizationResources.Resources.FavChar</th>
+                <th>@GlobalizationResources.Resources.Edit</th>
+                <th>@GlobalizationResources.Resources.Delete</th>
             </tr>
             @foreach (Show s in Show.showsList)
             {
@@ -90,22 +90,22 @@
                     <td>@s.Series</td>
                     <td>@s.Episodes</td>
                     <td>@s.Character</td>
-                    <td><a href="@Url.Action("EditShow","Home", new { id = s.ID})">Edit</a>
+                    <td><a href="@Url.Action("EditShow","Home", new { id = s.ID})">@GlobalizationResources.Resources.Edit</a>
                     <td>
-                    <td><a href="@Url.Action("DeleteShow","Home", new { id = s.ID})">Delete</a>
+                    <td><a href="@Url.Action("DeleteShow","Home", new { id = s.ID})">@GlobalizationResources.Resources.Delete</a>
                     <td>
                 </tr>
             }
         </table>
     </div>
     <div class="form">
-        <h3>Add new show:</h3>
+        <h3>@GlobalizationResources.Resources.DataTitle</h3>
     </div>
     <div class="form">
         @using (Html.BeginForm())
         {
             @Html.LabelFor(s => s.Name)
-            @Html.TextBoxFor(s => s.Name, null, new { @class = "form-control", placeholder = "Show name" })
+            @Html.TextBoxFor(s => s.Name, null, new { @class = "form-control", placeholder = @GlobalizationResources.Resources.Name })
 
             @Html.LabelFor(s => s.Episodes)
             @Html.TextBoxFor(s => s.Episodes, null, new { @class = "form-control", placeholder = 1, type = "number" })
@@ -114,9 +114,9 @@
             @Html.TextBoxFor(s => s.Series, null, new { @class = "form-control", placeholder = 1, type = "number" })
 
             @Html.LabelFor(s => s.Character)
-            @Html.TextBoxFor(s => s.Character, null, new { @class = "form-control", placeholder = "Favorite character"})
+            @Html.TextBoxFor(s => s.Character, null, new { @class = "form-control", placeholder = @GlobalizationResources.Resources.FavChar})
             <div class="form-button">
-                <input type="submit" value="Add" />
+                <input type="submit" value="@GlobalizationResources.Resources.Add" />
                 @Html.ValidationSummary()
             </div>
         }

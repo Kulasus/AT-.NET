@@ -79,7 +79,7 @@ namespace ATNET_WEBAPP_KON0355.Models
         //Used for updating show properties based on properties from ShowForm
         public static bool updateShow(ShowForm newShow)
         {
-            deleteShowFromJson(newShow.ID);
+            deleteShow(newShow.ID);
             //Adds show to json and to showsList automatically
             Show dummy = new Show(newShow.ID, newShow.Name, newShow.Episodes, newShow.Series, newShow.Character);
             return true;
@@ -121,7 +121,7 @@ namespace ATNET_WEBAPP_KON0355.Models
         }
 
 
-        private static bool deleteShowFromJson(int showId)
+        public static bool deleteShow(int showId)
         {
             //LAMBDA 1
             if(showsList.Remove(showsList.Find(x => x.ID == showId)))
