@@ -117,6 +117,7 @@
             @Html.TextBoxFor(s => s.Character, null, new { @class = "form-control", placeholder = "Favorite character"})
             <div class="form-button">
                 <input type="submit" value="Add" />
+                @Html.ValidationSummary()
             </div>
         }
     </div>

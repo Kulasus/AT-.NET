@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using ATNET_WEBAPP_KON0355.Models;
 using ATNET_WEBAPP_KON0355.Exceptions;
 
@@ -44,6 +39,28 @@ namespace ATNET_WEBAPP_KON0355.Controllers
         public IActionResult Data()
         {
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult Data(ShowForm form)
+        {
+            if(form.Name == null || form.Name.Length <= 0)
+            {
+                ModelState.AddModelError("NameError", "Show name must be filled and have valid length.");
+            }
+            if(form.Episodes <= 0 || form.Series <= 0)
+            {
+                ModelState.AddModelError("EpisodesSeriesError", "Episodes and series number must be higher then 0");
+            }
+            if(form.Character == null || form.Character.Length <=0)
+            {
+                ModelState.AddModelError("CharacterError", "Favorite character must be filled and have valid length.");
+            }
+            if (ModelState.IsValid)
+            {
+                Show dummy = new Show(form.Name, form.Episodes, form.Series, form.Character);
+            }
+            return this.Data();
         }
 
         public IActionResult DeleteShow(int id)

@@ -60,19 +60,19 @@
     </nav>
 
     <div class="main-title">
-        <h1 class="title">Intro text</h1>
+        <h1 class="title">My favorite series</h1>
     </div>
-    <div class="main-text">
-        <p>
-            Aenean non ornare augue. Phasellus ac orci neque. In sed velit leo. Class aptent 
-            taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-            Donec tristique tempus felis, sit amet euismod elit venenatis et. Vivamus molestie, ligula a pretium condimentum, purus 
-            mi cursus sem, dictum rhoncus elit turpis eu dolor. In hac habitasse platea dictumst. Ut vulputate lacus metus, in accumsan 
-            magna viverra id. Nam eget ex justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-            egestas. Mauris leo nibh, sodales sed feugiat eu, iaculis eu magna. Integer id congue justo. Sed maximus tempus 
-            sem in tempus. Nulla ac condimentum ante.
-        </p>    
+    <div class="main-text"> 
+        @foreach(Show s in Show.showsList)
+        {
+            <ul>
+                <li>
+                    <p><strong>@s.Name</strong> is one of my favorite series. It has <strong>@s.Series</strong> series and <strong>@s.Episodes</strong> episodes in total.
+                        My favorite character in the series is <strong>@s.Character</strong> .
+                    </p>
+                </li>
+            </ul>
+        }
     </div>
-
 </body>
 </html>
