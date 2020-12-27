@@ -25,7 +25,7 @@ namespace ATNET_WEBAPP_KON0355.Controllers
         [HttpPost]
         public IActionResult Login(LoginForm form)
         {
-            if(form.Username != "admin" && form.Password != "admin")
+            if(form.Username != "admin" || form.Password != "admin")
             {
                 ModelState.AddModelError("Credentials", GlobalizationResources.Resources.CredentialsError);
             }
