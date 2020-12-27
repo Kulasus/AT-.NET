@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Newtonsoft.Json;
 using System.IO;
 using ATNET_WEBAPP_KON0355.Exceptions;
@@ -21,7 +20,7 @@ namespace ATNET_WEBAPP_KON0355.Models
 
         private static Random rand = new Random();
 
-
+        //Constructor used for creating new instances from frontend
         public Show(string Name, int Episodes, int Series, string Character)
         {
             this.ID = generateId();
@@ -32,6 +31,7 @@ namespace ATNET_WEBAPP_KON0355.Models
             addShow(this);
         }
 
+        //Constructor used for populating showsList from json file
         [JsonConstructor]
         public Show(int ID, string Name, int Episodes, int Series, string Character)
         {
@@ -43,13 +43,49 @@ namespace ATNET_WEBAPP_KON0355.Models
             addShow(this);
         }
 
+        private static void addShow(Show newShow)
+        {
+            showsList.Add(newShow);
+            sortShows();
+            saveShowsToJson();
+        }
+
+        //Sorting by id for data consistense
+        private static void sortShows()
+        {
+            //LAMBDA 2
+            showsList.OrderBy(x => x.ID);
+        }
+
+        //Returns true if showsList contains show with given id
+        public static bool containsById(int showId)
+        {
+            //LAMBDA 3
+            return showsList.Where(x => x.ID == showId).ToList().Count == 1;
+        }
+
+        public static Show getOneById(int showId)
+        {
+            //LAMBDA 4
+            Show ret = showsList.Find(x => x.ID == showId);
+            if (ret == null)
+            {
+                //CUSTOM EXCEPTION
+                throw new ShowNotFoundException("Bad ID");
+            }
+            else return ret;
+        }
+
+        //Used for updating show properties based on properties from ShowForm
         public static bool updateShow(ShowForm newShow)
         {
             deleteShowFromJson(newShow.ID);
+            //Adds show to json and to showsList automatically
             Show dummy = new Show(newShow.ID, newShow.Name, newShow.Episodes, newShow.Series, newShow.Character);
             return true;
         }
 
+        //Used for initial populating of showsList from json file
         public static void loadShowsFromJson()
         {
             try
@@ -67,21 +103,7 @@ namespace ATNET_WEBAPP_KON0355.Models
 
         }
 
-        public static bool deleteShowFromJson(int showId)
-        {
-            //LAMBDA 1
-            if(showsList.Remove(showsList.Find(x => x.ID == showId)))
-            {
-                saveShowsToJson();
-                return true;
-            }
-            else
-            {
-                //CUSTOM EXCEPTION 1
-                throw new ShowNotFoundException("Bad ID");
-            }
-        }
-
+        //Used for saving showsList to json file
         private static void saveShowsToJson()
         {
             try
@@ -92,37 +114,29 @@ namespace ATNET_WEBAPP_KON0355.Models
                     serializer.Serialize(file, showsList);
                 }
             }
-            catch(IOException e)
+            catch (IOException e)
             {
                 Debug.WriteLine(e.ToString());
             }
         }
 
-        public static void addShow(Show newShow)
+
+        private static bool deleteShowFromJson(int showId)
         {
-            showsList.Add(newShow);
-            sortShows();
-            saveShowsToJson();
+            //LAMBDA 1
+            if(showsList.Remove(showsList.Find(x => x.ID == showId)))
+            {
+                saveShowsToJson();
+                return true;
+            }
+            else
+            {
+                //CUSTOM EXCEPTION
+                throw new ShowNotFoundException("Bad ID");
+            }
         }
 
-        private static void sortShows()
-        {
-            //LAMBDA 2
-            showsList.OrderBy(x => x.ID);
-        }
-
-        public static bool containsById(int showId)
-        {
-            //LAMBDA 3
-            return showsList.Where(x => x.ID == showId).ToList().Count == 1;
-        }
-
-        public static Show getOneById(int showId)
-        {
-            //LAMBDA 4
-            return showsList.Find(x => x.ID == showId);
-        }
-
+        //Helper function to generate unique ID
         private static int generateId()
         {
             int ret;
