@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Úvodní stránka";
+    ViewData["Title"] = "Home page";
 }
 <!DOCTYPE html>
 <style>
@@ -51,24 +51,25 @@
 
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a href="@Url.Action("Index","Home")" class="nav-link">Home</a>
+                <a href="@Url.Action("Index","Home")" class="nav-link">@GlobalizationResources.Resources.Home</a>
             </li>
             <li class="nav-item">
-                <a href="@Url.Action("Login","Home")" class="nav-link">Data</a>
+                <a href="@Url.Action("Login","Home")" class="nav-link">@GlobalizationResources.Resources.Data</a>
             </li>
         </ul>
     </nav>
 
     <div class="main-title">
-        <h1 class="title">My favorite series</h1>
+        <h1 class="title">@GlobalizationResources.Resources.Title</h1>
     </div>
     <div class="main-text"> 
         @foreach(Show s in Show.showsList)
         {
             <ul>
                 <li>
-                    <p><strong>@s.Name</strong> is one of my favorite series. It has <strong>@s.Series</strong> series and <strong>@s.Episodes</strong> episodes in total.
-                        My favorite character in the series is <strong>@s.Character</strong> .
+                    <p>
+                        <strong>@s.Name</strong> @GlobalizationResources.Resources.HomeSen1 <strong>@s.Series</strong> @GlobalizationResources.Resources.HomeSen2 <strong>@s.Episodes</strong> @GlobalizationResources.Resources.HomeSen3
+                        @GlobalizationResources.Resources.HomeSen4 <strong>@s.Character</strong>.
                     </p>
                 </li>
             </ul>

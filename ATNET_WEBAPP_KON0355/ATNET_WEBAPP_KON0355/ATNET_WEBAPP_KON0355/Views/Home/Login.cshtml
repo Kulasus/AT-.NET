@@ -67,11 +67,11 @@
                     @Html.ValidationSummary()
                     <div class="form-group">
                         @Html.ValidationMessageFor(x => x.Username)
-                        @Html.TextBoxFor(x => x.Username, null, new { @class = "form-control", placeholder = "Your Username *" })
+                        @Html.TextBoxFor(x => x.Username, null, new { @class = "form-control", placeholder = @GlobalizationResources.Resources.Username })
                     </div>
                     <div class="form-group">
                         @Html.ValidationMessageFor(x => x.Password)
-                        @Html.TextBoxFor(x => x.Password, null, new { @class = "form-control", placeholder = "Your Password *" })
+                        @Html.TextBoxFor(x => x.Password, null, new { @class = "form-control", placeholder = @GlobalizationResources.Resources.Password, type="password" })
                     </div>
                     <div class="form-group">
                         <input type="submit" class="btnSubmit" value="Login" />

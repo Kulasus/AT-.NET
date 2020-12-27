@@ -25,9 +25,9 @@ namespace ATNET_WEBAPP_KON0355.Controllers
         [HttpPost]
         public IActionResult Login(LoginForm form)
         {
-            if(form.Username != "admin" && form.Password != "admin")
+            if(form.Username != "admin" || form.Password != "admin")
             {
-                ModelState.AddModelError("Credentials", "Invalid credentials");
+                ModelState.AddModelError("Credentials", GlobalizationResources.Resources.CredentialsError);
             }
             if (ModelState.IsValid)
             {
@@ -46,15 +46,15 @@ namespace ATNET_WEBAPP_KON0355.Controllers
         {
             if(form.Name == null || form.Name.Length <= 0)
             {
-                ModelState.AddModelError("NameError", "Show name must be filled and have valid length.");
+                ModelState.AddModelError("NameError", GlobalizationResources.Resources.NameError);
             }
             if(form.Episodes <= 0 || form.Series <= 0)
             {
-                ModelState.AddModelError("EpisodesSeriesError", "Episodes and series number must be higher then 0");
+                ModelState.AddModelError("EpisodesSeriesError", GlobalizationResources.Resources.EpisodesSeriesError);
             }
             if(form.Character == null || form.Character.Length <=0)
             {
-                ModelState.AddModelError("CharacterError", "Favorite character must be filled and have valid length.");
+                ModelState.AddModelError("CharacterError", GlobalizationResources.Resources.CharacterError);
             }
             if (ModelState.IsValid)
             {
@@ -67,7 +67,7 @@ namespace ATNET_WEBAPP_KON0355.Controllers
         {
             try
             {
-                Show.deleteShowFromJson(id);
+                Show.deleteShow(id);
                 return RedirectToAction("Data", "Home");
             }
             catch (ShowNotFoundException e) {

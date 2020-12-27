@@ -10,6 +10,16 @@
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
+      },
+      "GlobalizationResources/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/GlobalizationResources.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GlobalizationResources.dll": {}
+        }
       }
     }
   },
@@ -44,10 +54,16 @@
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
+    },
+    "GlobalizationResources/1.0.0": {
+      "type": "project",
+      "path": "../GlobalizationResources/GlobalizationResources.csproj",
+      "msbuildProject": "../GlobalizationResources/GlobalizationResources.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "GlobalizationResources >= 1.0.0",
       "Newtonsoft.Json >= 12.0.3"
     ]
   },
@@ -76,7 +92,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Coding\\AT-.NET-GIT\\ATNET_WEBAPP_KON0355\\ATNET_WEBAPP_KON0355\\GlobalizationResources\\GlobalizationResources.csproj": {
+              "projectPath": "D:\\Coding\\AT-.NET-GIT\\ATNET_WEBAPP_KON0355\\ATNET_WEBAPP_KON0355\\GlobalizationResources\\GlobalizationResources.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
