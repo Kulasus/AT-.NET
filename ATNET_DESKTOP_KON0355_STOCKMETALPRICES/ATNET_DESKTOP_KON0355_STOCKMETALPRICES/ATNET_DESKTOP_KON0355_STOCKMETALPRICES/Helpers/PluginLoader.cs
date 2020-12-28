@@ -8,32 +8,50 @@ using System.IO;
 using System.Windows.Forms;
 using System.Diagnostics;
 using SharedContext;
+using ATNET_DESKTOP_KON0355_STOCKMETALPRICES.Properties;
+using ATNET_DESKTOP_KON0355_STOCKMETALPRICES.Exceptions;
 
 namespace ATNET_DESKTOP_KON0355_STOCKMETALPRICES.Helpers
 {
     public static class PluginLoader
     {
+        private static string pluginsDirectoryPath = Application.StartupPath + Resources.PluginsDirectoryPath;
+        private static string[] plugins = Directory.GetFiles(pluginsDirectoryPath, Resources.PluginsSuffix);
 
-        public static void LoadPlugins()
+        public static List<Type> GetPlugins()
         {
-            Debug.WriteLine("LOADING PLUGINS");
-            string path = Application.StartupPath + "\\Plugins";
-            Debug.WriteLine(path);
-            string[] pluginFiles = Directory.GetFiles(path, "*.dll");
-            foreach(string s in pluginFiles)
+            List<Type> validTypes = new List<Type>();
+            foreach(string s in plugins)
             {
                 Assembly assembly = Assembly.LoadFile(s);
-                Type[] types = assembly.GetTypes();
-                foreach(Type t in types)
+                List<Type> allPluginTypes = assembly.GetTypes().ToList();
+                try
                 {
-                    if (IsIPlugin(t))
-                    {
-                        object obj = Activator.CreateInstance(t);
-                        MethodInfo method = t.GetMethod("Greet");
-                        method.Invoke(obj, new object[] { });
-                    }
+                    List<Type> validPluginTypes = GetValidTypes(allPluginTypes);
+                    validTypes.AddRange(validPluginTypes);
+                }
+                catch (PluginLoaderException e){
+                    Trace.WriteLine(e.Message);
                 }
             }
+            return validTypes;
+        }
+
+        private static List<Type> GetValidTypes(List<Type> types)
+        {
+            List<Type> validTypes = new List<Type>();
+            foreach(Type genericType in types)
+            {
+                if (IsIPlugin(genericType)) {
+                    validTypes.Add(genericType);
+                    Trace.WriteLine(Resources.PluginLoaderSuccesMessage + genericType.Name);
+                }
+                else
+                {
+                    throw new PluginLoaderException(Resources.PluginLoaderErrorMessage + genericType.FullName);
+                }
+            }
+            return validTypes;
         }
 
         private static bool IsIPlugin(Type t)
