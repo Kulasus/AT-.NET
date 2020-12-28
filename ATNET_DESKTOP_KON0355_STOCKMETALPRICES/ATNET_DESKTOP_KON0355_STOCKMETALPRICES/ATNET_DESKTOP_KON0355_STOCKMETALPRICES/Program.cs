@@ -15,7 +15,7 @@ namespace ATNET_DESKTOP_KON0355_STOCKMETALPRICES
         [STAThread]
         static void Main()
         {
-            PluginLoader.LoadPlugins();
+            PluginLoader.GetPlugins();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());
