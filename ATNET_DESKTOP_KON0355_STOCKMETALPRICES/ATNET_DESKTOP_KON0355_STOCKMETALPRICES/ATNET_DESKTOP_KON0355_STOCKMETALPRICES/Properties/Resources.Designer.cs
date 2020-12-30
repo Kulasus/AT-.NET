@@ -61,6 +61,123 @@ namespace ATNET_DESKTOP_KON0355_STOCKMETALPRICES.Properties {
         }
         
         /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný Currency not supported! .
+        /// </summary>
+        internal static string ApiClientCurrencyErrorMessage {
+            get {
+                return ResourceManager.GetString("ApiClientCurrencyErrorMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný Invalid request!.
+        /// </summary>
+        internal static string ApiClientInvalidRequestErrorMessage {
+            get {
+                return ResourceManager.GetString("ApiClientInvalidRequestErrorMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný Metal not suported! .
+        /// </summary>
+        internal static string ApiClientMetalErrorMessage {
+            get {
+                return ResourceManager.GetString("ApiClientMetalErrorMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný Response status is not valid! .
+        /// </summary>
+        internal static string ApiClientResponseErrorMessage {
+            get {
+                return ResourceManager.GetString("ApiClientResponseErrorMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný https://www.goldapi.io/api/status.
+        /// </summary>
+        internal static string ApiStatusUrl {
+            get {
+                return ResourceManager.GetString("ApiStatusUrl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný https://www.goldapi.io/api/.
+        /// </summary>
+        internal static string ApiUrl {
+            get {
+                return ResourceManager.GetString("ApiUrl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný application/json.
+        /// </summary>
+        internal static string Content_type {
+            get {
+                return ResourceManager.GetString("Content-type", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný CZK.
+        /// </summary>
+        internal static string CzkMarking {
+            get {
+                return ResourceManager.GetString("CzkMarking", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný EUR.
+        /// </summary>
+        internal static string EurMarking {
+            get {
+                return ResourceManager.GetString("EurMarking", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný GBP.
+        /// </summary>
+        internal static string GbpMarking {
+            get {
+                return ResourceManager.GetString("GbpMarking", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný XAU.
+        /// </summary>
+        internal static string GoldMarking {
+            get {
+                return ResourceManager.GetString("GoldMarking", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný XPD.
+        /// </summary>
+        internal static string PalladiumMarking {
+            get {
+                return ResourceManager.GetString("PalladiumMarking", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný XPT.
+        /// </summary>
+        internal static string PlatinumMarking {
+            get {
+                return ResourceManager.GetString("PlatinumMarking", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Vyhledá lokalizovaný řetězec podobný Invalid plugin found! Skipping .
         /// </summary>
         internal static string PluginLoaderErrorMessage {
@@ -93,6 +210,33 @@ namespace ATNET_DESKTOP_KON0355_STOCKMETALPRICES.Properties {
         internal static string PluginsSuffix {
             get {
                 return ResourceManager.GetString("PluginsSuffix", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný XAG.
+        /// </summary>
+        internal static string SilverMarking {
+            get {
+                return ResourceManager.GetString("SilverMarking", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný USD.
+        /// </summary>
+        internal static string UsdMarking {
+            get {
+                return ResourceManager.GetString("UsdMarking", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný goldapi-f3o3yhukj8fr6ew-io.
+        /// </summary>
+        internal static string X_access_token {
+            get {
+                return ResourceManager.GetString("X-access-token", resourceCulture);
             }
         }
     }
