@@ -117,6 +117,45 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ApiClientCurrencyErrorMessage" xml:space="preserve">
+    <value>Currency not supported! </value>
+  </data>
+  <data name="ApiClientInvalidRequestErrorMessage" xml:space="preserve">
+    <value>Invalid request!</value>
+  </data>
+  <data name="ApiClientMetalErrorMessage" xml:space="preserve">
+    <value>Metal not suported! </value>
+  </data>
+  <data name="ApiClientResponseErrorMessage" xml:space="preserve">
+    <value>Response status is not valid! </value>
+  </data>
+  <data name="ApiStatusUrl" xml:space="preserve">
+    <value>https://www.goldapi.io/api/status</value>
+  </data>
+  <data name="ApiUrl" xml:space="preserve">
+    <value>https://www.goldapi.io/api/</value>
+  </data>
+  <data name="Content-type" xml:space="preserve">
+    <value>application/json</value>
+  </data>
+  <data name="CzkMarking" xml:space="preserve">
+    <value>CZK</value>
+  </data>
+  <data name="EurMarking" xml:space="preserve">
+    <value>EUR</value>
+  </data>
+  <data name="GbpMarking" xml:space="preserve">
+    <value>GBP</value>
+  </data>
+  <data name="GoldMarking" xml:space="preserve">
+    <value>XAU</value>
+  </data>
+  <data name="PalladiumMarking" xml:space="preserve">
+    <value>XPD</value>
+  </data>
+  <data name="PlatinumMarking" xml:space="preserve">
+    <value>XPT</value>
+  </data>
   <data name="PluginLoaderErrorMessage" xml:space="preserve">
     <value>Invalid plugin found! Skipping </value>
   </data>
@@ -128,5 +167,14 @@
   </data>
   <data name="PluginsSuffix" xml:space="preserve">
     <value>*.dll</value>
+  </data>
+  <data name="SilverMarking" xml:space="preserve">
+    <value>XAG</value>
+  </data>
+  <data name="UsdMarking" xml:space="preserve">
+    <value>USD</value>
+  </data>
+  <data name="X-access-token" xml:space="preserve">
+    <value>goldapi-f3o3yhukj8fr6ew-io</value>
   </data>
 </root>
