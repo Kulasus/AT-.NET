@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ATNET_DESKTOP_KON0355_STOCKMETALPRICES.Exceptions
+namespace GoldPlugin.Exceptions
 {
     class ApiClientException : Exception
     {
