@@ -1,7 +1,9 @@
-﻿namespace SharedContext
+﻿using System.Collections.Generic;
+
+namespace SharedContext
 {
     public interface IPlugin
     {
-        string GetJsonString();
+          Dictionary<string,string> GetJsonString();
     }
 }

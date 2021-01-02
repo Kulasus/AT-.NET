@@ -45,12 +45,17 @@ namespace GoldPlugin
         {
             return supportedCurrencies.Contains(currency);
         }
-        public string GetJsonString()
+        public Dictionary<string,string> GetJsonString()
         {
             IRestResponse response = restClient.Execute(restRequest);
             if (response.IsSuccessful)
             {
-                return response.Content;
+                var data = JObject.Parse(response.Content);
+                Dictionary<string, string> result = new Dictionary<string, string>();
+                result.Add("currency", Convert.ToString(data["currency"]));
+                result.Add("timestamp", Convert.ToString(data["timestamp"]));
+                result.Add("price", Convert.ToString(data["price"]));
+                return result;
             }
             else if (CheckApiStatus())
             {

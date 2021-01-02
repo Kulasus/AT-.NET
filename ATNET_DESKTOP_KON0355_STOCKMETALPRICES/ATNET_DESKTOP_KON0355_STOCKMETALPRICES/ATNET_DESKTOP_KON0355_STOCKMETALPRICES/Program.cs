@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
 using ATNET_DESKTOP_KON0355_STOCKMETALPRICES.Helpers;
+using RestSharp;
 
 namespace ATNET_DESKTOP_KON0355_STOCKMETALPRICES
 {
@@ -16,9 +17,6 @@ namespace ATNET_DESKTOP_KON0355_STOCKMETALPRICES
         [STAThread]
         static void Main()
         {
-            //ApiClient apiClient = new ApiClient("XAU", "CZK");
-            //Debug.WriteLine("response.Content");
-            //Debug.WriteLine(apiClient.GetJsonString());
             PluginLoader.GetPlugins();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
