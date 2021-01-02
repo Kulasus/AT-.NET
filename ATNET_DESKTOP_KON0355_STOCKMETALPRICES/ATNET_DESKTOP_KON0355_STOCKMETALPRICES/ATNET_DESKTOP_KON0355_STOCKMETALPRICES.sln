@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedContext", "SharedCont
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvalidPlugin", "InvalidPlugin\InvalidPlugin.csproj", "{806E78E5-92C1-40D2-811B-5767EB9D6F7B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetalApiPlugin", "MetalApiPlugin\MetalApiPlugin.csproj", "{34F9F6F5-F2A6-4851-8743-F5C5B3FF00DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +38,10 @@ Global
 		{806E78E5-92C1-40D2-811B-5767EB9D6F7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{806E78E5-92C1-40D2-811B-5767EB9D6F7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{806E78E5-92C1-40D2-811B-5767EB9D6F7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34F9F6F5-F2A6-4851-8743-F5C5B3FF00DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34F9F6F5-F2A6-4851-8743-F5C5B3FF00DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34F9F6F5-F2A6-4851-8743-F5C5B3FF00DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34F9F6F5-F2A6-4851-8743-F5C5B3FF00DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
