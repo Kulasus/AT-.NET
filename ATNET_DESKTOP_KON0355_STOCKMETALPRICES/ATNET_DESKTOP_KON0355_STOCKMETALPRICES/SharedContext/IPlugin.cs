@@ -2,6 +2,6 @@
 {
     public interface IPlugin
     {
-        void Greet();
+        string GetJsonString();
     }
 }
