@@ -6,18 +6,26 @@ using System.Threading.Tasks;
 using SharedContext;
 using RestSharp;
 using Newtonsoft.Json.Linq;
+using MetalApiPlugin.Properties;
 
 namespace MetalApiPlugin
 {
     class MetalApiProcessor : IPlugin
     {
+        private RestClient restClient;
+        private RestRequest restRequest;
+
+        public MetalApiProcessor()
+        {
+            restClient = new RestClient(Resources.ApiUrl);
+            restRequest = new RestRequest(Method.GET);
+            restRequest.AddParameter("access_key", Resources.AccesKey);
+            restRequest.AddParameter("base", Resources.Base);
+            restRequest.AddParameter("symbols", Resources.Symbols);
+        }
+
         public Dictionary<string,string> GetJsonString()
         {
-            RestClient restClient = new RestClient("https://metals-api.com/api/latest");
-            RestRequest restRequest = new RestRequest(Method.GET);
-            restRequest.AddParameter("access_key", "xdrt8gv2b6ho8r9pj4tcnyag8qhy4z65y50d03710664x27hjoixb47ijfbw");
-            restRequest.AddParameter("base", "CZK");
-            restRequest.AddParameter("symbols", "XAU");
             IRestResponse response = restClient.Execute(restRequest);
 
             Dictionary<string, string> result = new Dictionary<string, string>();

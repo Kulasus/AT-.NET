@@ -59,5 +59,41 @@ namespace MetalApiPlugin.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný xdrt8gv2b6ho8r9pj4tcnyag8qhy4z65y50d03710664x27hjoixb47ijfbw.
+        /// </summary>
+        internal static string AccesKey {
+            get {
+                return ResourceManager.GetString("AccesKey", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný https://metals-api.com/api/latest.
+        /// </summary>
+        internal static string ApiUrl {
+            get {
+                return ResourceManager.GetString("ApiUrl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný CZK.
+        /// </summary>
+        internal static string Base {
+            get {
+                return ResourceManager.GetString("Base", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný XAU.
+        /// </summary>
+        internal static string Symbols {
+            get {
+                return ResourceManager.GetString("Symbols", resourceCulture);
+            }
+        }
     }
 }
