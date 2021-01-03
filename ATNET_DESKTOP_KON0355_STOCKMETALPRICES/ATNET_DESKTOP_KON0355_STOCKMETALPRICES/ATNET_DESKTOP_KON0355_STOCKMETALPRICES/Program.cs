@@ -19,20 +19,7 @@ namespace ATNET_DESKTOP_KON0355_STOCKMETALPRICES
         static void Main()
         {
             List<Type> plugins = PluginLoader.GetPlugins();
-            /*
-            Debug.WriteLine("Count: " + plugins.Count);
-            Debug.WriteLine("Calling GetJsonDataDict on Plugins");
-            foreach(Type plugin in plugins)
-            {
-                Debug.WriteLine(plugin.FullName);
-                object classInstance = Activator.CreateInstance(plugin, new object[] { });
-                MethodInfo mi = plugin.GetMethod("GetJsonDataDict");
-                Dictionary<string,string> result = (Dictionary<string, string>)mi.Invoke(classInstance, null);
-                foreach(string val in result.Values)
-                {
-                    Debug.WriteLine(val);
-                }
-            }*/
+            PluginInvoker.Invoke(plugins);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());
