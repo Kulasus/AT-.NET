@@ -21,7 +21,14 @@ namespace GoldPlugin
         {
             Resources.GoldMarking, Resources.SilverMarking, Resources.PalladiumMarking, Resources.PlatinumMarking
         });
-        public GoldProcessor(string metal = null, string currency = null)
+        public GoldProcessor()
+        {
+            restClient = new RestClient(Resources.ApiUrl + Resources.GoldMarking + "/" + Resources.CzkMarking);
+            restRequest = new RestRequest(Method.GET);
+            restRequest.AddHeader("x-access-token", Resources.X_access_token);
+            restRequest.AddHeader("Content-Type", Resources.Content_type);
+        }
+        public GoldProcessor(string metal, string currency)
         {
             if (!CheckMetal(metal.ToUpper()) || metal == null)
             {
@@ -45,7 +52,7 @@ namespace GoldPlugin
         {
             return supportedCurrencies.Contains(currency);
         }
-        public Dictionary<string,string> GetJsonString()
+        public Dictionary<string,string> GetJsonDataDict()
         {
             IRestResponse response = restClient.Execute(restRequest);
             if (response.IsSuccessful)

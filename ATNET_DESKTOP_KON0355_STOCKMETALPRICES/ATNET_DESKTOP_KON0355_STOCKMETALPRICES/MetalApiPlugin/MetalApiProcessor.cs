@@ -10,7 +10,7 @@ using MetalApiPlugin.Properties;
 
 namespace MetalApiPlugin
 {
-    class MetalApiProcessor : IPlugin
+    public class MetalApiProcessor : IPlugin
     {
         private RestClient restClient;
         private RestRequest restRequest;
@@ -24,7 +24,7 @@ namespace MetalApiPlugin
             restRequest.AddParameter("symbols", Resources.Symbols);
         }
 
-        public Dictionary<string,string> GetJsonString()
+        public Dictionary<string,string> GetJsonDataDict()
         {
             IRestResponse response = restClient.Execute(restRequest);
 

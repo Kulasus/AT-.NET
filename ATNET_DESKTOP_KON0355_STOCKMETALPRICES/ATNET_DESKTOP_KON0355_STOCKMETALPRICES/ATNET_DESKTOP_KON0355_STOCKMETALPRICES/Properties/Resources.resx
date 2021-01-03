@@ -141,6 +141,12 @@
   <data name="CzkMarking" xml:space="preserve">
     <value>CZK</value>
   </data>
+  <data name="DefaultExceptionFolderName" xml:space="preserve">
+    <value>Exceptions</value>
+  </data>
+  <data name="DefaultResourceFileName" xml:space="preserve">
+    <value>Properties.Resources</value>
+  </data>
   <data name="EurMarking" xml:space="preserve">
     <value>EUR</value>
   </data>
@@ -150,6 +156,9 @@
   <data name="GoldMarking" xml:space="preserve">
     <value>XAU</value>
   </data>
+  <data name="IPluginCoreMethodName" xml:space="preserve">
+    <value>GetJsonDataDict</value>
+  </data>
   <data name="PalladiumMarking" xml:space="preserve">
     <value>XPD</value>
   </data>
@@ -158,6 +167,12 @@
   </data>
   <data name="PluginLoaderErrorMessage" xml:space="preserve">
     <value>Invalid plugin found! Skipping </value>
+  </data>
+  <data name="PluginLoaderExceptionClassSkippedMessage" xml:space="preserve">
+    <value>Found exception class! Skipping </value>
+  </data>
+  <data name="PluginLoaderResourceFileSkipperMessage" xml:space="preserve">
+    <value>Found resource file! Skipping </value>
   </data>
   <data name="PluginLoaderSuccesMessage" xml:space="preserve">
     <value>Plugin loaded sucesfully. </value>
