@@ -133,6 +133,24 @@ namespace ATNET_DESKTOP_KON0355_STOCKMETALPRICES.Properties {
         }
         
         /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný Exceptions.
+        /// </summary>
+        internal static string DefaultExceptionFolderName {
+            get {
+                return ResourceManager.GetString("DefaultExceptionFolderName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný Properties.Resources.
+        /// </summary>
+        internal static string DefaultResourceFileName {
+            get {
+                return ResourceManager.GetString("DefaultResourceFileName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Vyhledá lokalizovaný řetězec podobný EUR.
         /// </summary>
         internal static string EurMarking {
@@ -160,6 +178,15 @@ namespace ATNET_DESKTOP_KON0355_STOCKMETALPRICES.Properties {
         }
         
         /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný GetJsonDataDict.
+        /// </summary>
+        internal static string IPluginCoreMethodName {
+            get {
+                return ResourceManager.GetString("IPluginCoreMethodName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Vyhledá lokalizovaný řetězec podobný XPD.
         /// </summary>
         internal static string PalladiumMarking {
@@ -183,6 +210,24 @@ namespace ATNET_DESKTOP_KON0355_STOCKMETALPRICES.Properties {
         internal static string PluginLoaderErrorMessage {
             get {
                 return ResourceManager.GetString("PluginLoaderErrorMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný Found exception class! Skipping .
+        /// </summary>
+        internal static string PluginLoaderExceptionClassSkippedMessage {
+            get {
+                return ResourceManager.GetString("PluginLoaderExceptionClassSkippedMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný Found resource file! Skipping .
+        /// </summary>
+        internal static string PluginLoaderResourceFileSkipperMessage {
+            get {
+                return ResourceManager.GetString("PluginLoaderResourceFileSkipperMessage", resourceCulture);
             }
         }
         

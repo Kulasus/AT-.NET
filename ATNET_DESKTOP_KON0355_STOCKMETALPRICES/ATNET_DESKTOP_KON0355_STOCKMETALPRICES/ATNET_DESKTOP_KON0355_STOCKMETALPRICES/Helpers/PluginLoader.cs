@@ -28,6 +28,7 @@ namespace ATNET_DESKTOP_KON0355_STOCKMETALPRICES.Helpers
                 try
                 {
                     List<Type> validPluginTypes = GetValidTypes(allPluginTypes);
+                    Debug.WriteLine("Plugin loaded count: " + validPluginTypes.Count);
                     validTypes.AddRange(validPluginTypes);
                 }
                 catch (PluginLoaderException e){
@@ -46,6 +47,14 @@ namespace ATNET_DESKTOP_KON0355_STOCKMETALPRICES.Helpers
                     validTypes.Add(genericType);
                     Trace.WriteLine(Resources.PluginLoaderSuccesMessage + genericType.Name);
                 }
+                else if (IsResourceFile(genericType))
+                {
+                    Trace.WriteLine(Resources.PluginLoaderResourceFileSkipperMessage + genericType.Name);
+                }
+                else if (IsExceptionClass(genericType))
+                {
+                    Trace.WriteLine(Resources.PluginLoaderExceptionClassSkippedMessage + genericType.FullName);
+                }
                 else
                 {
                     throw new PluginLoaderException(Resources.PluginLoaderErrorMessage + genericType.FullName);
@@ -57,6 +66,16 @@ namespace ATNET_DESKTOP_KON0355_STOCKMETALPRICES.Helpers
         private static bool IsIPlugin(Type t)
         {
             return t.GetInterfaces().Contains(typeof(IPlugin));
+        }
+
+        private static bool IsResourceFile(Type t)
+        {
+            return t.FullName.Contains(Resources.DefaultResourceFileName);
+        }
+
+        private static bool IsExceptionClass(Type t)
+        {
+            return t.FullName.Contains(Resources.DefaultExceptionFolderName);
         }
     }
 }

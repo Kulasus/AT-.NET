@@ -4,6 +4,6 @@ namespace SharedContext
 {
     public interface IPlugin
     {
-          Dictionary<string,string> GetJsonString();
+          Dictionary<string,string> GetJsonDataDict();
     }
 }
