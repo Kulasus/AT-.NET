@@ -284,5 +284,23 @@ namespace ATNET_DESKTOP_KON0355_STOCKMETALPRICES.Properties {
                 return ResourceManager.GetString("X-access-token", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný \Xml\.
+        /// </summary>
+        internal static string XmlDirectoryName {
+            get {
+                return ResourceManager.GetString("XmlDirectoryName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný .xml.
+        /// </summary>
+        internal static string XmlSuffix {
+            get {
+                return ResourceManager.GetString("XmlSuffix", resourceCulture);
+            }
+        }
     }
 }
