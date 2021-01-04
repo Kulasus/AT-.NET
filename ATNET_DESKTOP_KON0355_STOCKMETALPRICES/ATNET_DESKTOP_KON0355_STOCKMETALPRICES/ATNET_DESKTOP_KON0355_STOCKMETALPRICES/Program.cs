@@ -22,7 +22,7 @@ namespace ATNET_DESKTOP_KON0355_STOCKMETALPRICES
             PluginInvoker.Invoke(plugins);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            Application.Run(new MainForm(plugins));
         }
     }
 }

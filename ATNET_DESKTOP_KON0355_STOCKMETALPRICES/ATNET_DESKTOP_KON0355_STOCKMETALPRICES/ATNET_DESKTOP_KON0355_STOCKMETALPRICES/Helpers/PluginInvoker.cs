@@ -21,6 +21,10 @@ namespace ATNET_DESKTOP_KON0355_STOCKMETALPRICES.Helpers
                 {
                     Trace.WriteLine(val);
                 }
+
+                XmlService xmlService = new XmlService(plugin.Name);
+                xmlService.WriteToXml(result);
+
             }
         }
     }
