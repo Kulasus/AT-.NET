@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 using ATNET_DESKTOP_KON0355_STOCKMETALPRICES.Properties;
+using System.Diagnostics;
 
 namespace ATNET_DESKTOP_KON0355_STOCKMETALPRICES.Helpers
 {
@@ -15,6 +16,7 @@ namespace ATNET_DESKTOP_KON0355_STOCKMETALPRICES.Helpers
         private static string xmlFilesPath = Application.StartupPath + Resources.XmlDirectoryName;
         private XmlDocument xmlDocument;
         private string fileName;
+        public event EventHandler XmlWritten;
 
         public XmlService(string fileName)
         {
@@ -50,6 +52,7 @@ namespace ATNET_DESKTOP_KON0355_STOCKMETALPRICES.Helpers
             child.AppendChild(priceXml);
             root.AppendChild(child);
             xmlDocument.Save(xmlFilesPath + fileName + Resources.XmlSuffix);
+            OnXmlWritten(EventArgs.Empty);
         }
 
         public List<Dictionary<string,string>> LoadFromXml()
@@ -64,6 +67,11 @@ namespace ATNET_DESKTOP_KON0355_STOCKMETALPRICES.Helpers
                 result.Add(newDict);
             }
             return result;
+        }
+
+        public virtual void OnXmlWritten(EventArgs e)
+        {
+            XmlWritten?.Invoke(this, e);
         }
     }
 }
