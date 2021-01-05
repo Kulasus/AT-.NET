@@ -205,6 +205,33 @@ namespace ATNET_DESKTOP_KON0355_STOCKMETALPRICES.Properties {
         }
         
         /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný Data were sucessfully writen to .
+        /// </summary>
+        internal static string PluginInvokerEventMessage {
+            get {
+                return ResourceManager.GetString("PluginInvokerEventMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný  finished its job and was closed..
+        /// </summary>
+        internal static string PluginInvokerThreadEndMessage {
+            get {
+                return ResourceManager.GetString("PluginInvokerThreadEndMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný  created and started to working as main plugin thread..
+        /// </summary>
+        internal static string PluginInvokerThreadStartMessage {
+            get {
+                return ResourceManager.GetString("PluginInvokerThreadStartMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Vyhledá lokalizovaný řetězec podobný Invalid plugin found! Skipping .
         /// </summary>
         internal static string PluginLoaderErrorMessage {

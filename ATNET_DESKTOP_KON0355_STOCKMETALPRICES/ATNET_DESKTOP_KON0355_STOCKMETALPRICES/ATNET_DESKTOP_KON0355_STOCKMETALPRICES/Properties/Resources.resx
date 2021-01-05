@@ -165,6 +165,15 @@
   <data name="PlatinumMarking" xml:space="preserve">
     <value>XPT</value>
   </data>
+  <data name="PluginInvokerEventMessage" xml:space="preserve">
+    <value>Data were sucessfully writen to </value>
+  </data>
+  <data name="PluginInvokerThreadEndMessage" xml:space="preserve">
+    <value> finished its job and was closed.</value>
+  </data>
+  <data name="PluginInvokerThreadStartMessage" xml:space="preserve">
+    <value> created and started to working as main plugin thread.</value>
+  </data>
   <data name="PluginLoaderErrorMessage" xml:space="preserve">
     <value>Invalid plugin found! Skipping </value>
   </data>

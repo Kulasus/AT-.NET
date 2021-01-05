@@ -29,4 +29,44 @@
     <currency>CZK</currency>
     <price>41028,5982401872</price>
   </record>
+  <record>
+    <timestamp>1609861200</timestamp>
+    <currency>CZK</currency>
+    <price>41552,8482684737</price>
+  </record>
+  <record>
+    <timestamp>1609861200</timestamp>
+    <currency>CZK</currency>
+    <price>41552,8482684737</price>
+  </record>
+  <record>
+    <timestamp>1609861200</timestamp>
+    <currency>CZK</currency>
+    <price>41552,8482684737</price>
+  </record>
+  <record>
+    <timestamp>1609866600</timestamp>
+    <currency>CZK</currency>
+    <price>41574,2434828659</price>
+  </record>
+  <record>
+    <timestamp>1609866600</timestamp>
+    <currency>CZK</currency>
+    <price>41574,2434828659</price>
+  </record>
+  <record>
+    <timestamp>1609866900</timestamp>
+    <currency>CZK</currency>
+    <price>41434,9092086624</price>
+  </record>
+  <record>
+    <timestamp>1609866960</timestamp>
+    <currency>CZK</currency>
+    <price>41448,9924229321</price>
+  </record>
+  <record>
+    <timestamp>1609867020</timestamp>
+    <currency>CZK</currency>
+    <price>41453,9598241868</price>
+  </record>
 </root>
